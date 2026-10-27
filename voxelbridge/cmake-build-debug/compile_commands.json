@@ -1,0 +1,8 @@
+[
+{
+  "directory": "C:/Users/anton/CLionProjects/voxelbridge/cmake-build-debug",
+  "command": "C:\\PROGRA~1\\MIB055~1\\18\\PROFES~1\\VC\\Tools\\MSVC\\1451~1.362\\bin\\Hostx64\\x64\\cl.exe  /nologo /TP -DGLFW_DLL -external:IC:\\Users\\anton\\CLionProjects\\voxelbridge\\vcpkg\\installed\\x64-windows\\include -external:W0 /DWIN32 /D_WINDOWS /EHsc /Zi /Ob0 /Od /RTC1 -std:c++20 -MDd /FoCMakeFiles\\VoxelBridge.dir\\main.cpp.obj /FdCMakeFiles\\VoxelBridge.dir\\ /FS -c C:\\Users\\anton\\CLionProjects\\voxelbridge\\main.cpp",
+  "file": "C:/Users/anton/CLionProjects/voxelbridge/main.cpp",
+  "output": "C:/Users/anton/CLionProjects/voxelbridge/cmake-build-debug/CMakeFiles/VoxelBridge.dir/main.cpp.obj"
+}
+]

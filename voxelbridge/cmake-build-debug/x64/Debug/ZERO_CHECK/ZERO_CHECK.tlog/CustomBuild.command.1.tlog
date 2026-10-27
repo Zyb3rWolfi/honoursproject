@@ -1,0 +1,10 @@
+^C:\USERS\ANTON\CLIONPROJECTS\VOXELBRIDGE\CMAKE-BUILD-DEBUG\CMAKEFILES\E19A1DBA321306329997A1812F58FC0C\GENERATE.STAMP.RULE
+setlocal
+C:\Users\anton\CLionProjects\voxelbridge\vcpkg\downloads\tools\cmake-4.4.4-windows\cmake-4.4.4-windows-x86_64\bin\cmake.exe -SC:/Users/anton/CLionProjects/voxelbridge -BC:/Users/anton/CLionProjects/voxelbridge/cmake-build-debug --check-stamp-list CMakeFiles/generate.stamp.list --vs-solution-file C:/Users/anton/CLionProjects/voxelbridge/cmake-build-debug/VoxelBridge.slnx
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd

@@ -1,0 +1,16 @@
+{
+  "version": 3,
+  "configurePresets": [
+    {
+      "name": "vcpkg",
+      "displayName": "VoxelBridge (vcpkg)",
+      "description": "Build with local vcpkg for GLFW, GLAD, and ImGui",
+      "cacheVariables": {
+        "CMAKE_TOOLCHAIN_FILE": {
+          "type": "FILEPATH",
+          "value": "${sourceDir}/vcpkg/scripts/buildsystems/vcpkg.cmake"
+        }
+      }
+    }
+  ]
+}
