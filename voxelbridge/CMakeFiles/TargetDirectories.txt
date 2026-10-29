@@ -1,0 +1,3 @@
+/home/antonscereskevics/RiderProjects/honoursproject/voxelbridge/CMakeFiles/VoxelBridge.dir
+/home/antonscereskevics/RiderProjects/honoursproject/voxelbridge/CMakeFiles/edit_cache.dir
+/home/antonscereskevics/RiderProjects/honoursproject/voxelbridge/CMakeFiles/rebuild_cache.dir

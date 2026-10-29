@@ -1,0 +1,4 @@
+ToolSet: 1.0 (local)Ninja: 1.13.2@/home/antonscereskevics/.local/share/JetBrains/Toolbox/apps/clion/bin/ninja/linux/x64/ninja
+Options: 
+
+Options:-DCMAKE_TOOLCHAIN_FILE=/home/antonscereskevics/RiderProjects/honoursproject/voxelbridge/vcpkg/scripts/buildsystems/vcpkg.cmake

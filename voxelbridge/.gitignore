@@ -1,0 +1,20 @@
+# CMake build output
+cmake-build-debug/
+cmake-build-release/
+
+# vcpkg generated files
+vcpkg/installed/
+vcpkg/buildtrees/
+vcpkg/downloads/
+vcpkg/packages/
+vcpkg/.vcpkg/+
+
+# IDE
+.idea/
+*.swp
+*.swo
+*~
+
+# OS
+.DS_Store
+Thumbs.db
