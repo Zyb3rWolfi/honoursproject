@@ -104,90 +104,217 @@ CMakeFiles/VoxelBridge.dir/src/Core/Application.cpp.o: \
  /usr/include/c++/16/bits/uses_allocator.h \
  /usr/include/c++/16/bits/uses_allocator_args.h /usr/include/c++/16/tuple \
  /usr/include/c++/16/bits/invoke.h /usr/include/c++/16/bits/ranges_util.h \
- /home/antonscereskevics/RiderProjects/honoursproject/voxelbridge/src/Core/../ImGUI/ImGuiWrapper.h \
- /usr/include/c++/16/chrono /usr/include/c++/16/bits/chrono.h \
- /usr/include/c++/16/ratio /usr/include/c++/16/cstdint \
+ /home/antonscereskevics/RiderProjects/honoursproject/voxelbridge/src/Core/../Gfx/Renderer.h \
+ /home/antonscereskevics/RiderProjects/honoursproject/voxelbridge/src/Core/../Gfx/Camera.h \
+ /home/antonscereskevics/RiderProjects/honoursproject/voxelbridge/vcpkg/installed/x64-linux/include/glm/glm.hpp \
+ /home/antonscereskevics/RiderProjects/honoursproject/voxelbridge/vcpkg/installed/x64-linux/include/glm/detail/_fixes.hpp \
+ /usr/include/c++/16/cmath /usr/include/math.h \
+ /usr/include/bits/math-vector.h /usr/include/bits/libm-simd-decl-stubs.h \
+ /usr/include/bits/flt-eval-method.h /usr/include/bits/fp-logb.h \
+ /usr/include/bits/fp-fast.h /usr/include/bits/mathcalls-macros.h \
+ /usr/include/bits/mathcalls-helper-functions.h \
+ /usr/include/bits/mathcalls.h /usr/include/bits/mathcalls-narrow.h \
+ /usr/include/bits/iscanonical.h /usr/include/c++/16/bits/specfun.h \
+ /usr/include/c++/16/tr1/gamma.tcc \
+ /usr/include/c++/16/tr1/special_function_util.h \
+ /usr/include/c++/16/tr1/bessel_function.tcc \
+ /usr/include/c++/16/tr1/beta_function.tcc \
+ /usr/include/c++/16/tr1/ell_integral.tcc \
+ /usr/include/c++/16/tr1/exp_integral.tcc \
+ /usr/include/c++/16/tr1/hypergeometric.tcc \
+ /usr/include/c++/16/tr1/legendre_function.tcc \
+ /usr/include/c++/16/tr1/modified_bessel_func.tcc \
+ /usr/include/c++/16/tr1/poly_hermite.tcc \
+ /usr/include/c++/16/tr1/poly_laguerre.tcc \
+ /usr/include/c++/16/tr1/riemann_zeta.tcc \
+ /home/antonscereskevics/RiderProjects/honoursproject/voxelbridge/vcpkg/installed/x64-linux/include/glm/detail/setup.hpp \
+ /usr/include/c++/16/cassert /usr/include/assert.h \
+ /home/antonscereskevics/RiderProjects/honoursproject/voxelbridge/vcpkg/installed/x64-linux/include/glm/simd/platform.h \
+ /usr/include/c++/16/cstdint \
  /usr/lib/gcc/x86_64-redhat-linux/16/include/stdint.h \
  /usr/include/stdint.h /usr/include/bits/stdint-uintn.h \
- /usr/include/bits/stdint-least.h /usr/include/c++/16/ctime \
- /usr/include/time.h /usr/include/bits/time.h /usr/include/bits/timex.h \
- /usr/include/bits/types/struct_tm.h \
- /usr/include/bits/types/struct_itimerspec.h \
- /usr/include/c++/16/bits/parse_numbers.h \
- /usr/include/c++/16/bits/stl_algo.h \
- /usr/include/c++/16/bits/algorithmfwd.h \
- /usr/include/c++/16/bits/stl_heap.h \
- /usr/include/c++/16/bits/uniform_int_dist.h \
- /usr/include/c++/16/bits/stl_tempbuf.h /usr/include/c++/16/sstream \
- /usr/include/c++/16/istream /usr/include/c++/16/ios \
- /usr/include/c++/16/exception /usr/include/c++/16/bits/exception_ptr.h \
- /usr/include/c++/16/bits/cxxabi_init_exception.h \
- /usr/include/c++/16/typeinfo /usr/include/c++/16/bits/nested_exception.h \
- /usr/include/c++/16/bits/ios_base.h /usr/include/c++/16/ext/atomicity.h \
- /usr/include/c++/16/x86_64-redhat-linux/bits/gthr.h \
- /usr/include/c++/16/x86_64-redhat-linux/bits/gthr-default.h \
- /usr/include/pthread.h /usr/include/sched.h /usr/include/bits/sched.h \
- /usr/include/linux/sched/types.h /usr/include/linux/types.h \
- /usr/include/asm/types.h /usr/include/asm-generic/types.h \
- /usr/include/asm-generic/int-ll64.h /usr/include/asm/bitsperlong.h \
- /usr/include/asm-generic/bitsperlong.h /usr/include/linux/posix_types.h \
- /usr/include/linux/stddef.h /usr/include/asm/posix_types.h \
- /usr/include/asm/posix_types_64.h /usr/include/asm-generic/posix_types.h \
- /usr/include/bits/types/struct_sched_param.h /usr/include/bits/cpu-set.h \
- /usr/include/bits/setjmp.h \
- /usr/include/bits/types/struct___jmp_buf_tag.h \
+ /usr/include/bits/stdint-least.h /usr/include/c++/16/climits \
+ /usr/lib/gcc/x86_64-redhat-linux/16/include/limits.h \
+ /usr/lib/gcc/x86_64-redhat-linux/16/include/syslimits.h \
+ /usr/include/limits.h /usr/include/bits/posix1_lim.h \
+ /usr/include/bits/local_lim.h /usr/include/linux/limits.h \
  /usr/include/bits/pthread_stack_min-dynamic.h \
- /usr/include/c++/16/x86_64-redhat-linux/bits/atomic_word.h \
- /usr/include/sys/single_threaded.h \
- /usr/include/c++/16/bits/locale_classes.h \
- /usr/include/c++/16/bits/functexcept.h \
- /usr/include/c++/16/bits/locale_classes.tcc \
- /usr/include/c++/16/system_error \
- /usr/include/c++/16/x86_64-redhat-linux/bits/error_constants.h \
- /usr/include/c++/16/stdexcept \
- /usr/include/c++/16/bits/stdexcept_except.h \
- /usr/include/c++/16/streambuf /usr/include/c++/16/bits/streambuf.tcc \
- /usr/include/c++/16/bits/basic_ios.h \
- /usr/include/c++/16/bits/locale_facets.h /usr/include/c++/16/cwctype \
- /usr/include/wctype.h /usr/include/bits/wctype-wchar.h \
- /usr/include/c++/16/x86_64-redhat-linux/bits/ctype_base.h \
- /usr/include/c++/16/bits/streambuf_iterator.h \
- /usr/include/c++/16/x86_64-redhat-linux/bits/ctype_inline.h \
- /usr/include/c++/16/bits/locale_facets.tcc \
- /usr/include/c++/16/bits/basic_ios.tcc /usr/include/c++/16/ostream \
- /usr/include/c++/16/bits/ostream.h \
- /usr/include/c++/16/bits/ostream_print.h \
- /usr/include/c++/16/bits/ostream.tcc \
- /usr/include/c++/16/bits/istream.tcc \
- /usr/include/c++/16/bits/sstream.tcc /usr/include/c++/16/vector \
+ /usr/include/bits/posix2_lim.h /usr/include/bits/xopen_lim.h \
+ /usr/include/bits/uio_lim.h /usr/include/c++/16/cfloat \
+ /usr/lib/gcc/x86_64-redhat-linux/16/include/float.h \
+ /home/antonscereskevics/RiderProjects/honoursproject/voxelbridge/vcpkg/installed/x64-linux/include/glm/fwd.hpp \
+ /home/antonscereskevics/RiderProjects/honoursproject/voxelbridge/vcpkg/installed/x64-linux/include/glm/detail/qualifier.hpp \
+ /home/antonscereskevics/RiderProjects/honoursproject/voxelbridge/vcpkg/installed/x64-linux/include/glm/detail/setup.hpp \
+ /home/antonscereskevics/RiderProjects/honoursproject/voxelbridge/vcpkg/installed/x64-linux/include/glm/vec2.hpp \
+ /home/antonscereskevics/RiderProjects/honoursproject/voxelbridge/vcpkg/installed/x64-linux/include/glm/ext/vector_bool2.hpp \
+ /home/antonscereskevics/RiderProjects/honoursproject/voxelbridge/vcpkg/installed/x64-linux/include/glm/detail/type_vec2.hpp \
+ /home/antonscereskevics/RiderProjects/honoursproject/voxelbridge/vcpkg/installed/x64-linux/include/glm/detail/type_vec2.inl \
+ /home/antonscereskevics/RiderProjects/honoursproject/voxelbridge/vcpkg/installed/x64-linux/include/glm/detail/compute_vector_relational.hpp \
+ /home/antonscereskevics/RiderProjects/honoursproject/voxelbridge/vcpkg/installed/x64-linux/include/glm/ext/vector_bool2_precision.hpp \
+ /home/antonscereskevics/RiderProjects/honoursproject/voxelbridge/vcpkg/installed/x64-linux/include/glm/ext/vector_float2.hpp \
+ /home/antonscereskevics/RiderProjects/honoursproject/voxelbridge/vcpkg/installed/x64-linux/include/glm/ext/vector_float2_precision.hpp \
+ /home/antonscereskevics/RiderProjects/honoursproject/voxelbridge/vcpkg/installed/x64-linux/include/glm/ext/vector_double2.hpp \
+ /home/antonscereskevics/RiderProjects/honoursproject/voxelbridge/vcpkg/installed/x64-linux/include/glm/ext/vector_double2_precision.hpp \
+ /home/antonscereskevics/RiderProjects/honoursproject/voxelbridge/vcpkg/installed/x64-linux/include/glm/ext/vector_int2.hpp \
+ /home/antonscereskevics/RiderProjects/honoursproject/voxelbridge/vcpkg/installed/x64-linux/include/glm/ext/vector_int2_sized.hpp \
+ /home/antonscereskevics/RiderProjects/honoursproject/voxelbridge/vcpkg/installed/x64-linux/include/glm/ext/scalar_int_sized.hpp \
+ /home/antonscereskevics/RiderProjects/honoursproject/voxelbridge/vcpkg/installed/x64-linux/include/glm/detail/setup.hpp \
+ /home/antonscereskevics/RiderProjects/honoursproject/voxelbridge/vcpkg/installed/x64-linux/include/glm/ext/vector_uint2.hpp \
+ /home/antonscereskevics/RiderProjects/honoursproject/voxelbridge/vcpkg/installed/x64-linux/include/glm/ext/vector_uint2_sized.hpp \
+ /home/antonscereskevics/RiderProjects/honoursproject/voxelbridge/vcpkg/installed/x64-linux/include/glm/ext/scalar_uint_sized.hpp \
+ /home/antonscereskevics/RiderProjects/honoursproject/voxelbridge/vcpkg/installed/x64-linux/include/glm/vec3.hpp \
+ /home/antonscereskevics/RiderProjects/honoursproject/voxelbridge/vcpkg/installed/x64-linux/include/glm/ext/vector_bool3.hpp \
+ /home/antonscereskevics/RiderProjects/honoursproject/voxelbridge/vcpkg/installed/x64-linux/include/glm/detail/type_vec3.hpp \
+ /home/antonscereskevics/RiderProjects/honoursproject/voxelbridge/vcpkg/installed/x64-linux/include/glm/detail/type_vec3.inl \
+ /home/antonscereskevics/RiderProjects/honoursproject/voxelbridge/vcpkg/installed/x64-linux/include/glm/detail/compute_vector_decl.hpp \
+ /usr/include/c++/16/functional /usr/include/c++/16/bits/refwrap.h \
+ /usr/include/c++/16/bits/std_function.h /usr/include/c++/16/typeinfo \
+ /usr/include/c++/16/bits/functexcept.h /usr/include/c++/16/unordered_map \
+ /usr/include/c++/16/bits/unordered_map.h \
+ /usr/include/c++/16/bits/hashtable.h \
+ /usr/include/c++/16/bits/hashtable_policy.h \
+ /usr/include/c++/16/ext/aligned_buffer.h \
+ /usr/include/c++/16/bits/enable_special_members.h \
+ /usr/include/c++/16/bits/node_handle.h /usr/include/c++/16/vector \
  /usr/include/c++/16/bits/stl_uninitialized.h \
  /usr/include/c++/16/bits/stl_vector.h \
  /usr/include/c++/16/bits/stl_bvector.h \
- /usr/include/c++/16/bits/vector.tcc \
- /usr/include/c++/16/bits/shared_ptr.h \
- /usr/include/c++/16/bits/shared_ptr_base.h \
- /usr/include/c++/16/bits/allocated_ptr.h \
- /usr/include/c++/16/bits/refwrap.h /usr/include/c++/16/bits/unique_ptr.h \
- /usr/include/c++/16/ext/aligned_buffer.h \
- /usr/include/c++/16/ext/concurrence.h /usr/include/c++/16/bits/align.h \
- /usr/include/c++/16/bits/chrono_io.h /usr/include/c++/16/format \
- /usr/include/c++/16/array /usr/include/c++/16/charconv \
- /usr/include/c++/16/locale \
- /usr/include/c++/16/bits/locale_facets_nonio.h \
- /usr/include/c++/16/x86_64-redhat-linux/bits/time_members.h \
- /usr/include/c++/16/x86_64-redhat-linux/bits/messages_members.h \
- /usr/include/libintl.h /usr/include/c++/16/bits/codecvt.h \
- /usr/include/c++/16/bits/locale_facets_nonio.tcc \
- /usr/include/c++/16/bits/locale_conv.h /usr/include/c++/16/optional \
- /usr/include/c++/16/bits/enable_special_members.h \
- /usr/include/c++/16/span /usr/include/c++/16/bits/monostate.h \
- /usr/include/c++/16/bits/formatfwd.h \
- /usr/include/c++/16/bits/ranges_algobase.h \
- /usr/include/c++/16/bits/unicode.h \
- /usr/include/c++/16/bits/unicode-data.h \
- /home/antonscereskevics/RiderProjects/honoursproject/voxelbridge/vcpkg/installed/x64-linux/include/glad/glad.h \
+ /usr/include/c++/16/bits/vector.tcc /usr/include/c++/16/array \
+ /usr/include/c++/16/bits/binders.h \
+ /home/antonscereskevics/RiderProjects/honoursproject/voxelbridge/vcpkg/installed/x64-linux/include/glm/detail/_vectorize.hpp \
+ /home/antonscereskevics/RiderProjects/honoursproject/voxelbridge/vcpkg/installed/x64-linux/include/glm/ext/vector_bool3_precision.hpp \
+ /home/antonscereskevics/RiderProjects/honoursproject/voxelbridge/vcpkg/installed/x64-linux/include/glm/ext/vector_float3.hpp \
+ /home/antonscereskevics/RiderProjects/honoursproject/voxelbridge/vcpkg/installed/x64-linux/include/glm/ext/vector_float3_precision.hpp \
+ /home/antonscereskevics/RiderProjects/honoursproject/voxelbridge/vcpkg/installed/x64-linux/include/glm/ext/vector_double3.hpp \
+ /home/antonscereskevics/RiderProjects/honoursproject/voxelbridge/vcpkg/installed/x64-linux/include/glm/ext/vector_double3_precision.hpp \
+ /home/antonscereskevics/RiderProjects/honoursproject/voxelbridge/vcpkg/installed/x64-linux/include/glm/ext/vector_int3.hpp \
+ /home/antonscereskevics/RiderProjects/honoursproject/voxelbridge/vcpkg/installed/x64-linux/include/glm/ext/vector_int3_sized.hpp \
+ /home/antonscereskevics/RiderProjects/honoursproject/voxelbridge/vcpkg/installed/x64-linux/include/glm/ext/vector_uint3.hpp \
+ /home/antonscereskevics/RiderProjects/honoursproject/voxelbridge/vcpkg/installed/x64-linux/include/glm/ext/vector_uint3_sized.hpp \
+ /home/antonscereskevics/RiderProjects/honoursproject/voxelbridge/vcpkg/installed/x64-linux/include/glm/vec4.hpp \
+ /home/antonscereskevics/RiderProjects/honoursproject/voxelbridge/vcpkg/installed/x64-linux/include/glm/ext/vector_bool4.hpp \
+ /home/antonscereskevics/RiderProjects/honoursproject/voxelbridge/vcpkg/installed/x64-linux/include/glm/detail/type_vec4.hpp \
+ /home/antonscereskevics/RiderProjects/honoursproject/voxelbridge/vcpkg/installed/x64-linux/include/glm/detail/type_vec4.inl \
+ /home/antonscereskevics/RiderProjects/honoursproject/voxelbridge/vcpkg/installed/x64-linux/include/glm/ext/vector_bool4_precision.hpp \
+ /home/antonscereskevics/RiderProjects/honoursproject/voxelbridge/vcpkg/installed/x64-linux/include/glm/ext/vector_float4.hpp \
+ /home/antonscereskevics/RiderProjects/honoursproject/voxelbridge/vcpkg/installed/x64-linux/include/glm/ext/vector_float4_precision.hpp \
+ /home/antonscereskevics/RiderProjects/honoursproject/voxelbridge/vcpkg/installed/x64-linux/include/glm/ext/vector_double4.hpp \
+ /home/antonscereskevics/RiderProjects/honoursproject/voxelbridge/vcpkg/installed/x64-linux/include/glm/ext/vector_double4_precision.hpp \
+ /home/antonscereskevics/RiderProjects/honoursproject/voxelbridge/vcpkg/installed/x64-linux/include/glm/ext/vector_int4.hpp \
+ /home/antonscereskevics/RiderProjects/honoursproject/voxelbridge/vcpkg/installed/x64-linux/include/glm/ext/vector_int4_sized.hpp \
+ /home/antonscereskevics/RiderProjects/honoursproject/voxelbridge/vcpkg/installed/x64-linux/include/glm/ext/vector_uint4.hpp \
+ /home/antonscereskevics/RiderProjects/honoursproject/voxelbridge/vcpkg/installed/x64-linux/include/glm/ext/vector_uint4_sized.hpp \
+ /home/antonscereskevics/RiderProjects/honoursproject/voxelbridge/vcpkg/installed/x64-linux/include/glm/mat2x2.hpp \
+ /home/antonscereskevics/RiderProjects/honoursproject/voxelbridge/vcpkg/installed/x64-linux/include/glm/ext/matrix_double2x2.hpp \
+ /home/antonscereskevics/RiderProjects/honoursproject/voxelbridge/vcpkg/installed/x64-linux/include/glm/detail/type_mat2x2.hpp \
+ /home/antonscereskevics/RiderProjects/honoursproject/voxelbridge/vcpkg/installed/x64-linux/include/glm/detail/type_mat2x2.inl \
+ /home/antonscereskevics/RiderProjects/honoursproject/voxelbridge/vcpkg/installed/x64-linux/include/glm/matrix.hpp \
+ /home/antonscereskevics/RiderProjects/honoursproject/voxelbridge/vcpkg/installed/x64-linux/include/glm/mat2x3.hpp \
+ /home/antonscereskevics/RiderProjects/honoursproject/voxelbridge/vcpkg/installed/x64-linux/include/glm/ext/matrix_double2x3.hpp \
+ /home/antonscereskevics/RiderProjects/honoursproject/voxelbridge/vcpkg/installed/x64-linux/include/glm/detail/type_mat2x3.hpp \
+ /home/antonscereskevics/RiderProjects/honoursproject/voxelbridge/vcpkg/installed/x64-linux/include/glm/detail/type_mat2x3.inl \
+ /home/antonscereskevics/RiderProjects/honoursproject/voxelbridge/vcpkg/installed/x64-linux/include/glm/ext/matrix_double2x3_precision.hpp \
+ /home/antonscereskevics/RiderProjects/honoursproject/voxelbridge/vcpkg/installed/x64-linux/include/glm/ext/matrix_float2x3.hpp \
+ /home/antonscereskevics/RiderProjects/honoursproject/voxelbridge/vcpkg/installed/x64-linux/include/glm/ext/matrix_float2x3_precision.hpp \
+ /home/antonscereskevics/RiderProjects/honoursproject/voxelbridge/vcpkg/installed/x64-linux/include/glm/mat2x4.hpp \
+ /home/antonscereskevics/RiderProjects/honoursproject/voxelbridge/vcpkg/installed/x64-linux/include/glm/ext/matrix_double2x4.hpp \
+ /home/antonscereskevics/RiderProjects/honoursproject/voxelbridge/vcpkg/installed/x64-linux/include/glm/detail/type_mat2x4.hpp \
+ /home/antonscereskevics/RiderProjects/honoursproject/voxelbridge/vcpkg/installed/x64-linux/include/glm/detail/type_mat2x4.inl \
+ /home/antonscereskevics/RiderProjects/honoursproject/voxelbridge/vcpkg/installed/x64-linux/include/glm/ext/matrix_double2x4_precision.hpp \
+ /home/antonscereskevics/RiderProjects/honoursproject/voxelbridge/vcpkg/installed/x64-linux/include/glm/ext/matrix_float2x4.hpp \
+ /home/antonscereskevics/RiderProjects/honoursproject/voxelbridge/vcpkg/installed/x64-linux/include/glm/ext/matrix_float2x4_precision.hpp \
+ /home/antonscereskevics/RiderProjects/honoursproject/voxelbridge/vcpkg/installed/x64-linux/include/glm/mat3x2.hpp \
+ /home/antonscereskevics/RiderProjects/honoursproject/voxelbridge/vcpkg/installed/x64-linux/include/glm/ext/matrix_double3x2.hpp \
+ /home/antonscereskevics/RiderProjects/honoursproject/voxelbridge/vcpkg/installed/x64-linux/include/glm/detail/type_mat3x2.hpp \
+ /home/antonscereskevics/RiderProjects/honoursproject/voxelbridge/vcpkg/installed/x64-linux/include/glm/detail/type_mat3x2.inl \
+ /home/antonscereskevics/RiderProjects/honoursproject/voxelbridge/vcpkg/installed/x64-linux/include/glm/ext/matrix_double3x2_precision.hpp \
+ /home/antonscereskevics/RiderProjects/honoursproject/voxelbridge/vcpkg/installed/x64-linux/include/glm/ext/matrix_float3x2.hpp \
+ /home/antonscereskevics/RiderProjects/honoursproject/voxelbridge/vcpkg/installed/x64-linux/include/glm/ext/matrix_float3x2_precision.hpp \
+ /home/antonscereskevics/RiderProjects/honoursproject/voxelbridge/vcpkg/installed/x64-linux/include/glm/mat3x3.hpp \
+ /home/antonscereskevics/RiderProjects/honoursproject/voxelbridge/vcpkg/installed/x64-linux/include/glm/ext/matrix_double3x3.hpp \
+ /home/antonscereskevics/RiderProjects/honoursproject/voxelbridge/vcpkg/installed/x64-linux/include/glm/detail/type_mat3x3.hpp \
+ /home/antonscereskevics/RiderProjects/honoursproject/voxelbridge/vcpkg/installed/x64-linux/include/glm/detail/type_mat3x3.inl \
+ /home/antonscereskevics/RiderProjects/honoursproject/voxelbridge/vcpkg/installed/x64-linux/include/glm/common.hpp \
+ /home/antonscereskevics/RiderProjects/honoursproject/voxelbridge/vcpkg/installed/x64-linux/include/glm/detail/func_common.inl \
+ /home/antonscereskevics/RiderProjects/honoursproject/voxelbridge/vcpkg/installed/x64-linux/include/glm/vector_relational.hpp \
+ /home/antonscereskevics/RiderProjects/honoursproject/voxelbridge/vcpkg/installed/x64-linux/include/glm/detail/func_vector_relational.inl \
+ /home/antonscereskevics/RiderProjects/honoursproject/voxelbridge/vcpkg/installed/x64-linux/include/glm/detail/compute_common.hpp \
+ /home/antonscereskevics/RiderProjects/honoursproject/voxelbridge/vcpkg/installed/x64-linux/include/glm/detail/type_vec1.hpp \
+ /home/antonscereskevics/RiderProjects/honoursproject/voxelbridge/vcpkg/installed/x64-linux/include/glm/detail/type_vec1.inl \
+ /home/antonscereskevics/RiderProjects/honoursproject/voxelbridge/vcpkg/installed/x64-linux/include/glm/ext/matrix_double3x3_precision.hpp \
+ /home/antonscereskevics/RiderProjects/honoursproject/voxelbridge/vcpkg/installed/x64-linux/include/glm/ext/matrix_float3x3.hpp \
+ /home/antonscereskevics/RiderProjects/honoursproject/voxelbridge/vcpkg/installed/x64-linux/include/glm/ext/matrix_float3x3_precision.hpp \
+ /home/antonscereskevics/RiderProjects/honoursproject/voxelbridge/vcpkg/installed/x64-linux/include/glm/mat3x4.hpp \
+ /home/antonscereskevics/RiderProjects/honoursproject/voxelbridge/vcpkg/installed/x64-linux/include/glm/ext/matrix_double3x4.hpp \
+ /home/antonscereskevics/RiderProjects/honoursproject/voxelbridge/vcpkg/installed/x64-linux/include/glm/detail/type_mat3x4.hpp \
+ /home/antonscereskevics/RiderProjects/honoursproject/voxelbridge/vcpkg/installed/x64-linux/include/glm/detail/type_mat3x4.inl \
+ /home/antonscereskevics/RiderProjects/honoursproject/voxelbridge/vcpkg/installed/x64-linux/include/glm/ext/matrix_double3x4_precision.hpp \
+ /home/antonscereskevics/RiderProjects/honoursproject/voxelbridge/vcpkg/installed/x64-linux/include/glm/ext/matrix_float3x4.hpp \
+ /home/antonscereskevics/RiderProjects/honoursproject/voxelbridge/vcpkg/installed/x64-linux/include/glm/ext/matrix_float3x4_precision.hpp \
+ /home/antonscereskevics/RiderProjects/honoursproject/voxelbridge/vcpkg/installed/x64-linux/include/glm/mat4x2.hpp \
+ /home/antonscereskevics/RiderProjects/honoursproject/voxelbridge/vcpkg/installed/x64-linux/include/glm/ext/matrix_double4x2.hpp \
+ /home/antonscereskevics/RiderProjects/honoursproject/voxelbridge/vcpkg/installed/x64-linux/include/glm/detail/type_mat4x2.hpp \
+ /home/antonscereskevics/RiderProjects/honoursproject/voxelbridge/vcpkg/installed/x64-linux/include/glm/detail/type_mat4x2.inl \
+ /home/antonscereskevics/RiderProjects/honoursproject/voxelbridge/vcpkg/installed/x64-linux/include/glm/ext/matrix_double4x2_precision.hpp \
+ /home/antonscereskevics/RiderProjects/honoursproject/voxelbridge/vcpkg/installed/x64-linux/include/glm/ext/matrix_float4x2.hpp \
+ /home/antonscereskevics/RiderProjects/honoursproject/voxelbridge/vcpkg/installed/x64-linux/include/glm/ext/matrix_float4x2_precision.hpp \
+ /home/antonscereskevics/RiderProjects/honoursproject/voxelbridge/vcpkg/installed/x64-linux/include/glm/mat4x3.hpp \
+ /home/antonscereskevics/RiderProjects/honoursproject/voxelbridge/vcpkg/installed/x64-linux/include/glm/ext/matrix_double4x3.hpp \
+ /home/antonscereskevics/RiderProjects/honoursproject/voxelbridge/vcpkg/installed/x64-linux/include/glm/detail/type_mat4x3.hpp \
+ /home/antonscereskevics/RiderProjects/honoursproject/voxelbridge/vcpkg/installed/x64-linux/include/glm/detail/type_mat4x3.inl \
+ /home/antonscereskevics/RiderProjects/honoursproject/voxelbridge/vcpkg/installed/x64-linux/include/glm/ext/matrix_double4x3_precision.hpp \
+ /home/antonscereskevics/RiderProjects/honoursproject/voxelbridge/vcpkg/installed/x64-linux/include/glm/ext/matrix_float4x3.hpp \
+ /home/antonscereskevics/RiderProjects/honoursproject/voxelbridge/vcpkg/installed/x64-linux/include/glm/ext/matrix_float4x3_precision.hpp \
+ /home/antonscereskevics/RiderProjects/honoursproject/voxelbridge/vcpkg/installed/x64-linux/include/glm/mat4x4.hpp \
+ /home/antonscereskevics/RiderProjects/honoursproject/voxelbridge/vcpkg/installed/x64-linux/include/glm/ext/matrix_double4x4.hpp \
+ /home/antonscereskevics/RiderProjects/honoursproject/voxelbridge/vcpkg/installed/x64-linux/include/glm/detail/type_mat4x4.hpp \
+ /home/antonscereskevics/RiderProjects/honoursproject/voxelbridge/vcpkg/installed/x64-linux/include/glm/detail/type_mat4x4.inl \
+ /home/antonscereskevics/RiderProjects/honoursproject/voxelbridge/vcpkg/installed/x64-linux/include/glm/geometric.hpp \
+ /home/antonscereskevics/RiderProjects/honoursproject/voxelbridge/vcpkg/installed/x64-linux/include/glm/detail/func_geometric.inl \
+ /home/antonscereskevics/RiderProjects/honoursproject/voxelbridge/vcpkg/installed/x64-linux/include/glm/exponential.hpp \
+ /home/antonscereskevics/RiderProjects/honoursproject/voxelbridge/vcpkg/installed/x64-linux/include/glm/detail/func_exponential.inl \
+ /home/antonscereskevics/RiderProjects/honoursproject/voxelbridge/vcpkg/installed/x64-linux/include/glm/ext/matrix_double4x4_precision.hpp \
+ /home/antonscereskevics/RiderProjects/honoursproject/voxelbridge/vcpkg/installed/x64-linux/include/glm/ext/matrix_float4x4.hpp \
+ /home/antonscereskevics/RiderProjects/honoursproject/voxelbridge/vcpkg/installed/x64-linux/include/glm/ext/matrix_float4x4_precision.hpp \
+ /home/antonscereskevics/RiderProjects/honoursproject/voxelbridge/vcpkg/installed/x64-linux/include/glm/detail/func_matrix.inl \
+ /home/antonscereskevics/RiderProjects/honoursproject/voxelbridge/vcpkg/installed/x64-linux/include/glm/ext/matrix_double2x2_precision.hpp \
+ /home/antonscereskevics/RiderProjects/honoursproject/voxelbridge/vcpkg/installed/x64-linux/include/glm/ext/matrix_float2x2.hpp \
+ /home/antonscereskevics/RiderProjects/honoursproject/voxelbridge/vcpkg/installed/x64-linux/include/glm/ext/matrix_float2x2_precision.hpp \
+ /home/antonscereskevics/RiderProjects/honoursproject/voxelbridge/vcpkg/installed/x64-linux/include/glm/trigonometric.hpp \
+ /home/antonscereskevics/RiderProjects/honoursproject/voxelbridge/vcpkg/installed/x64-linux/include/glm/detail/func_trigonometric.inl \
+ /home/antonscereskevics/RiderProjects/honoursproject/voxelbridge/vcpkg/installed/x64-linux/include/glm/packing.hpp \
+ /home/antonscereskevics/RiderProjects/honoursproject/voxelbridge/vcpkg/installed/x64-linux/include/glm/detail/func_packing.inl \
+ /home/antonscereskevics/RiderProjects/honoursproject/voxelbridge/vcpkg/installed/x64-linux/include/glm/detail/type_half.hpp \
+ /home/antonscereskevics/RiderProjects/honoursproject/voxelbridge/vcpkg/installed/x64-linux/include/glm/detail/type_half.inl \
+ /home/antonscereskevics/RiderProjects/honoursproject/voxelbridge/vcpkg/installed/x64-linux/include/glm/integer.hpp \
+ /home/antonscereskevics/RiderProjects/honoursproject/voxelbridge/vcpkg/installed/x64-linux/include/glm/detail/func_integer.inl \
+ /home/antonscereskevics/RiderProjects/honoursproject/voxelbridge/vcpkg/installed/x64-linux/include/glm/gtc/matrix_transform.hpp \
+ /home/antonscereskevics/RiderProjects/honoursproject/voxelbridge/vcpkg/installed/x64-linux/include/glm/ext/matrix_projection.hpp \
+ /home/antonscereskevics/RiderProjects/honoursproject/voxelbridge/vcpkg/installed/x64-linux/include/glm/gtc/constants.hpp \
+ /home/antonscereskevics/RiderProjects/honoursproject/voxelbridge/vcpkg/installed/x64-linux/include/glm/ext/scalar_constants.hpp \
+ /home/antonscereskevics/RiderProjects/honoursproject/voxelbridge/vcpkg/installed/x64-linux/include/glm/ext/scalar_constants.inl \
+ /home/antonscereskevics/RiderProjects/honoursproject/voxelbridge/vcpkg/installed/x64-linux/include/glm/gtc/constants.inl \
+ /home/antonscereskevics/RiderProjects/honoursproject/voxelbridge/vcpkg/installed/x64-linux/include/glm/ext/matrix_projection.inl \
+ /home/antonscereskevics/RiderProjects/honoursproject/voxelbridge/vcpkg/installed/x64-linux/include/glm/ext/matrix_clip_space.hpp \
+ /home/antonscereskevics/RiderProjects/honoursproject/voxelbridge/vcpkg/installed/x64-linux/include/glm/ext/matrix_clip_space.inl \
+ /home/antonscereskevics/RiderProjects/honoursproject/voxelbridge/vcpkg/installed/x64-linux/include/glm/ext/matrix_transform.hpp \
+ /home/antonscereskevics/RiderProjects/honoursproject/voxelbridge/vcpkg/installed/x64-linux/include/glm/ext/matrix_transform.inl \
+ /home/antonscereskevics/RiderProjects/honoursproject/voxelbridge/vcpkg/installed/x64-linux/include/glm/gtc/matrix_transform.inl \
+ /home/antonscereskevics/RiderProjects/honoursproject/voxelbridge/src/Core/../Gfx/Mesh.h \
+ /home/antonscereskevics/RiderProjects/honoursproject/voxelbridge/src/Core/../Gfx/Vertex.h \
+ /home/antonscereskevics/RiderProjects/honoursproject/voxelbridge/src/Core/../Gfx/Shader.h \
+ /home/antonscereskevics/RiderProjects/honoursproject/voxelbridge/src/Core/../ImGUI/ImGuiWrapper.h \
+ /home/antonscereskevics/RiderProjects/honoursproject/voxelbridge/src/Core/../Core/Window.h \
+ /home/antonscereskevics/RiderProjects/honoursproject/voxelbridge/src/Core/../Gfx/Mesh.h \
+ /home/antonscereskevics/RiderProjects/honoursproject/voxelbridge/vcpkg/installed/x64-linux/include/GLFW/glfw3.h \
+ /usr/include/GL/gl.h \
+ /home/antonscereskevics/RiderProjects/honoursproject/voxelbridge/vcpkg/installed/x64-linux/include/GL/glext.h \
  /home/antonscereskevics/RiderProjects/honoursproject/voxelbridge/vcpkg/installed/x64-linux/include/KHR/khrplatform.h \
  /home/antonscereskevics/RiderProjects/honoursproject/voxelbridge/vcpkg/installed/x64-linux/include/imgui.h \
  /home/antonscereskevics/RiderProjects/honoursproject/voxelbridge/vcpkg/installed/x64-linux/include/imconfig.h \
- /usr/lib/gcc/x86_64-redhat-linux/16/include/float.h \
- /usr/include/string.h /usr/include/strings.h /usr/include/assert.h
+ /usr/include/string.h /usr/include/strings.h \
+ /usr/include/c++/16/stdexcept /usr/include/c++/16/exception \
+ /usr/include/c++/16/bits/exception_ptr.h \
+ /usr/include/c++/16/bits/cxxabi_init_exception.h \
+ /usr/include/c++/16/bits/nested_exception.h \
+ /usr/include/c++/16/bits/stdexcept_except.h

@@ -85,12 +85,12 @@ clean: CMakeFiles/VoxelBridge.dir/clean
 CMakeFiles/VoxelBridge.dir/all:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/VoxelBridge.dir/build.make CMakeFiles/VoxelBridge.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/VoxelBridge.dir/build.make CMakeFiles/VoxelBridge.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/antonscereskevics/RiderProjects/honoursproject/voxelbridge/CMakeFiles --progress-num=1,2,3,4,5 "Built target VoxelBridge"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/antonscereskevics/RiderProjects/honoursproject/voxelbridge/CMakeFiles --progress-num=1,2,3,4,5,6,7,8 "Built target VoxelBridge"
 .PHONY : CMakeFiles/VoxelBridge.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/VoxelBridge.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/antonscereskevics/RiderProjects/honoursproject/voxelbridge/CMakeFiles 5
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/antonscereskevics/RiderProjects/honoursproject/voxelbridge/CMakeFiles 8
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/VoxelBridge.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/antonscereskevics/RiderProjects/honoursproject/voxelbridge/CMakeFiles 0
 .PHONY : CMakeFiles/VoxelBridge.dir/rule
@@ -102,7 +102,7 @@ VoxelBridge: CMakeFiles/VoxelBridge.dir/rule
 # codegen rule for target.
 CMakeFiles/VoxelBridge.dir/codegen:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/VoxelBridge.dir/build.make CMakeFiles/VoxelBridge.dir/codegen
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/antonscereskevics/RiderProjects/honoursproject/voxelbridge/CMakeFiles --progress-num=1,2,3,4,5 "Finished codegen for target VoxelBridge"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/antonscereskevics/RiderProjects/honoursproject/voxelbridge/CMakeFiles --progress-num=1,2,3,4,5,6,7,8 "Finished codegen for target VoxelBridge"
 .PHONY : CMakeFiles/VoxelBridge.dir/codegen
 
 # clean rule for target.

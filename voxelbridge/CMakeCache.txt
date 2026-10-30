@@ -265,6 +265,9 @@ glad_DIR:PATH=/home/antonscereskevics/RiderProjects/honoursproject/voxelbridge/v
 //The directory containing a CMake configuration file for glfw3.
 glfw3_DIR:PATH=/home/antonscereskevics/RiderProjects/honoursproject/voxelbridge/vcpkg/installed/x64-linux/share/glfw3
 
+//The directory containing a CMake configuration file for glm.
+glm_DIR:PATH=/home/antonscereskevics/RiderProjects/honoursproject/voxelbridge/vcpkg/installed/x64-linux/share/glm
+
 //The directory containing a CMake configuration file for imgui.
 imgui_DIR:PATH=/home/antonscereskevics/RiderProjects/honoursproject/voxelbridge/vcpkg/installed/x64-linux/share/imgui
 

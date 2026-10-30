@@ -128,12 +128,57 @@ CMakeFiles/VoxelBridge.dir/src/Core/Window.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/VoxelBridge.dir/src/Core/Window.cpp.s"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/antonscereskevics/RiderProjects/honoursproject/voxelbridge/src/Core/Window.cpp -o CMakeFiles/VoxelBridge.dir/src/Core/Window.cpp.s
 
+CMakeFiles/VoxelBridge.dir/src/Gfx/Shader.cpp.o: CMakeFiles/VoxelBridge.dir/flags.make
+CMakeFiles/VoxelBridge.dir/src/Gfx/Shader.cpp.o: src/Gfx/Shader.cpp
+CMakeFiles/VoxelBridge.dir/src/Gfx/Shader.cpp.o: CMakeFiles/VoxelBridge.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/antonscereskevics/RiderProjects/honoursproject/voxelbridge/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/VoxelBridge.dir/src/Gfx/Shader.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/VoxelBridge.dir/src/Gfx/Shader.cpp.o -MF CMakeFiles/VoxelBridge.dir/src/Gfx/Shader.cpp.o.d -o CMakeFiles/VoxelBridge.dir/src/Gfx/Shader.cpp.o -c /home/antonscereskevics/RiderProjects/honoursproject/voxelbridge/src/Gfx/Shader.cpp
+
+CMakeFiles/VoxelBridge.dir/src/Gfx/Shader.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/VoxelBridge.dir/src/Gfx/Shader.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/antonscereskevics/RiderProjects/honoursproject/voxelbridge/src/Gfx/Shader.cpp > CMakeFiles/VoxelBridge.dir/src/Gfx/Shader.cpp.i
+
+CMakeFiles/VoxelBridge.dir/src/Gfx/Shader.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/VoxelBridge.dir/src/Gfx/Shader.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/antonscereskevics/RiderProjects/honoursproject/voxelbridge/src/Gfx/Shader.cpp -o CMakeFiles/VoxelBridge.dir/src/Gfx/Shader.cpp.s
+
+CMakeFiles/VoxelBridge.dir/src/Gfx/Renderer.cpp.o: CMakeFiles/VoxelBridge.dir/flags.make
+CMakeFiles/VoxelBridge.dir/src/Gfx/Renderer.cpp.o: src/Gfx/Renderer.cpp
+CMakeFiles/VoxelBridge.dir/src/Gfx/Renderer.cpp.o: CMakeFiles/VoxelBridge.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/antonscereskevics/RiderProjects/honoursproject/voxelbridge/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/VoxelBridge.dir/src/Gfx/Renderer.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/VoxelBridge.dir/src/Gfx/Renderer.cpp.o -MF CMakeFiles/VoxelBridge.dir/src/Gfx/Renderer.cpp.o.d -o CMakeFiles/VoxelBridge.dir/src/Gfx/Renderer.cpp.o -c /home/antonscereskevics/RiderProjects/honoursproject/voxelbridge/src/Gfx/Renderer.cpp
+
+CMakeFiles/VoxelBridge.dir/src/Gfx/Renderer.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/VoxelBridge.dir/src/Gfx/Renderer.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/antonscereskevics/RiderProjects/honoursproject/voxelbridge/src/Gfx/Renderer.cpp > CMakeFiles/VoxelBridge.dir/src/Gfx/Renderer.cpp.i
+
+CMakeFiles/VoxelBridge.dir/src/Gfx/Renderer.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/VoxelBridge.dir/src/Gfx/Renderer.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/antonscereskevics/RiderProjects/honoursproject/voxelbridge/src/Gfx/Renderer.cpp -o CMakeFiles/VoxelBridge.dir/src/Gfx/Renderer.cpp.s
+
+CMakeFiles/VoxelBridge.dir/src/Gfx/Mesh.cpp.o: CMakeFiles/VoxelBridge.dir/flags.make
+CMakeFiles/VoxelBridge.dir/src/Gfx/Mesh.cpp.o: src/Gfx/Mesh.cpp
+CMakeFiles/VoxelBridge.dir/src/Gfx/Mesh.cpp.o: CMakeFiles/VoxelBridge.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/antonscereskevics/RiderProjects/honoursproject/voxelbridge/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object CMakeFiles/VoxelBridge.dir/src/Gfx/Mesh.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/VoxelBridge.dir/src/Gfx/Mesh.cpp.o -MF CMakeFiles/VoxelBridge.dir/src/Gfx/Mesh.cpp.o.d -o CMakeFiles/VoxelBridge.dir/src/Gfx/Mesh.cpp.o -c /home/antonscereskevics/RiderProjects/honoursproject/voxelbridge/src/Gfx/Mesh.cpp
+
+CMakeFiles/VoxelBridge.dir/src/Gfx/Mesh.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/VoxelBridge.dir/src/Gfx/Mesh.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/antonscereskevics/RiderProjects/honoursproject/voxelbridge/src/Gfx/Mesh.cpp > CMakeFiles/VoxelBridge.dir/src/Gfx/Mesh.cpp.i
+
+CMakeFiles/VoxelBridge.dir/src/Gfx/Mesh.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/VoxelBridge.dir/src/Gfx/Mesh.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/antonscereskevics/RiderProjects/honoursproject/voxelbridge/src/Gfx/Mesh.cpp -o CMakeFiles/VoxelBridge.dir/src/Gfx/Mesh.cpp.s
+
 # Object files for target VoxelBridge
 VoxelBridge_OBJECTS = \
 "CMakeFiles/VoxelBridge.dir/src/main.cpp.o" \
 "CMakeFiles/VoxelBridge.dir/src/ImGUI/ImGuiWrapper.cpp.o" \
 "CMakeFiles/VoxelBridge.dir/src/Core/Application.cpp.o" \
-"CMakeFiles/VoxelBridge.dir/src/Core/Window.cpp.o"
+"CMakeFiles/VoxelBridge.dir/src/Core/Window.cpp.o" \
+"CMakeFiles/VoxelBridge.dir/src/Gfx/Shader.cpp.o" \
+"CMakeFiles/VoxelBridge.dir/src/Gfx/Renderer.cpp.o" \
+"CMakeFiles/VoxelBridge.dir/src/Gfx/Mesh.cpp.o"
 
 # External object files for target VoxelBridge
 VoxelBridge_EXTERNAL_OBJECTS =
@@ -142,16 +187,20 @@ VoxelBridge: CMakeFiles/VoxelBridge.dir/src/main.cpp.o
 VoxelBridge: CMakeFiles/VoxelBridge.dir/src/ImGUI/ImGuiWrapper.cpp.o
 VoxelBridge: CMakeFiles/VoxelBridge.dir/src/Core/Application.cpp.o
 VoxelBridge: CMakeFiles/VoxelBridge.dir/src/Core/Window.cpp.o
+VoxelBridge: CMakeFiles/VoxelBridge.dir/src/Gfx/Shader.cpp.o
+VoxelBridge: CMakeFiles/VoxelBridge.dir/src/Gfx/Renderer.cpp.o
+VoxelBridge: CMakeFiles/VoxelBridge.dir/src/Gfx/Mesh.cpp.o
 VoxelBridge: CMakeFiles/VoxelBridge.dir/build.make
 VoxelBridge: CMakeFiles/VoxelBridge.dir/compiler_depend.ts
 VoxelBridge: vcpkg/installed/x64-linux/debug/lib/libglfw3.a
 VoxelBridge: vcpkg/installed/x64-linux/debug/lib/libglad.a
+VoxelBridge: vcpkg/installed/x64-linux/debug/lib/libglm.a
 VoxelBridge: vcpkg/installed/x64-linux/debug/lib/libimguid.a
 VoxelBridge: vcpkg/installed/x64-linux/debug/lib/libglfw3.a
 VoxelBridge: /usr/lib64/librt.a
 VoxelBridge: /usr/lib64/libm.so
 VoxelBridge: CMakeFiles/VoxelBridge.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/home/antonscereskevics/RiderProjects/honoursproject/voxelbridge/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Linking CXX executable VoxelBridge"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/home/antonscereskevics/RiderProjects/honoursproject/voxelbridge/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Linking CXX executable VoxelBridge"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/VoxelBridge.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.

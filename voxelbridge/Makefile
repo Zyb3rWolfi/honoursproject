@@ -184,6 +184,78 @@ src/Core/Window.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/VoxelBridge.dir/build.make CMakeFiles/VoxelBridge.dir/src/Core/Window.cpp.s
 .PHONY : src/Core/Window.cpp.s
 
+src/Gfx/Mesh.o: src/Gfx/Mesh.cpp.o
+.PHONY : src/Gfx/Mesh.o
+
+# target to build an object file
+src/Gfx/Mesh.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/VoxelBridge.dir/build.make CMakeFiles/VoxelBridge.dir/src/Gfx/Mesh.cpp.o
+.PHONY : src/Gfx/Mesh.cpp.o
+
+src/Gfx/Mesh.i: src/Gfx/Mesh.cpp.i
+.PHONY : src/Gfx/Mesh.i
+
+# target to preprocess a source file
+src/Gfx/Mesh.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/VoxelBridge.dir/build.make CMakeFiles/VoxelBridge.dir/src/Gfx/Mesh.cpp.i
+.PHONY : src/Gfx/Mesh.cpp.i
+
+src/Gfx/Mesh.s: src/Gfx/Mesh.cpp.s
+.PHONY : src/Gfx/Mesh.s
+
+# target to generate assembly for a file
+src/Gfx/Mesh.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/VoxelBridge.dir/build.make CMakeFiles/VoxelBridge.dir/src/Gfx/Mesh.cpp.s
+.PHONY : src/Gfx/Mesh.cpp.s
+
+src/Gfx/Renderer.o: src/Gfx/Renderer.cpp.o
+.PHONY : src/Gfx/Renderer.o
+
+# target to build an object file
+src/Gfx/Renderer.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/VoxelBridge.dir/build.make CMakeFiles/VoxelBridge.dir/src/Gfx/Renderer.cpp.o
+.PHONY : src/Gfx/Renderer.cpp.o
+
+src/Gfx/Renderer.i: src/Gfx/Renderer.cpp.i
+.PHONY : src/Gfx/Renderer.i
+
+# target to preprocess a source file
+src/Gfx/Renderer.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/VoxelBridge.dir/build.make CMakeFiles/VoxelBridge.dir/src/Gfx/Renderer.cpp.i
+.PHONY : src/Gfx/Renderer.cpp.i
+
+src/Gfx/Renderer.s: src/Gfx/Renderer.cpp.s
+.PHONY : src/Gfx/Renderer.s
+
+# target to generate assembly for a file
+src/Gfx/Renderer.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/VoxelBridge.dir/build.make CMakeFiles/VoxelBridge.dir/src/Gfx/Renderer.cpp.s
+.PHONY : src/Gfx/Renderer.cpp.s
+
+src/Gfx/Shader.o: src/Gfx/Shader.cpp.o
+.PHONY : src/Gfx/Shader.o
+
+# target to build an object file
+src/Gfx/Shader.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/VoxelBridge.dir/build.make CMakeFiles/VoxelBridge.dir/src/Gfx/Shader.cpp.o
+.PHONY : src/Gfx/Shader.cpp.o
+
+src/Gfx/Shader.i: src/Gfx/Shader.cpp.i
+.PHONY : src/Gfx/Shader.i
+
+# target to preprocess a source file
+src/Gfx/Shader.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/VoxelBridge.dir/build.make CMakeFiles/VoxelBridge.dir/src/Gfx/Shader.cpp.i
+.PHONY : src/Gfx/Shader.cpp.i
+
+src/Gfx/Shader.s: src/Gfx/Shader.cpp.s
+.PHONY : src/Gfx/Shader.s
+
+# target to generate assembly for a file
+src/Gfx/Shader.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/VoxelBridge.dir/build.make CMakeFiles/VoxelBridge.dir/src/Gfx/Shader.cpp.s
+.PHONY : src/Gfx/Shader.cpp.s
+
 src/ImGUI/ImGuiWrapper.o: src/ImGUI/ImGuiWrapper.cpp.o
 .PHONY : src/ImGUI/ImGuiWrapper.o
 
@@ -248,6 +320,15 @@ help:
 	@echo "... src/Core/Window.o"
 	@echo "... src/Core/Window.i"
 	@echo "... src/Core/Window.s"
+	@echo "... src/Gfx/Mesh.o"
+	@echo "... src/Gfx/Mesh.i"
+	@echo "... src/Gfx/Mesh.s"
+	@echo "... src/Gfx/Renderer.o"
+	@echo "... src/Gfx/Renderer.i"
+	@echo "... src/Gfx/Renderer.s"
+	@echo "... src/Gfx/Shader.o"
+	@echo "... src/Gfx/Shader.i"
+	@echo "... src/Gfx/Shader.s"
 	@echo "... src/ImGUI/ImGuiWrapper.o"
 	@echo "... src/ImGUI/ImGuiWrapper.i"
 	@echo "... src/ImGUI/ImGuiWrapper.s"

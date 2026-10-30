@@ -6,8 +6,12 @@ VoxelBridge: \
   CMakeFiles/VoxelBridge.dir/src/ImGUI/ImGuiWrapper.cpp.o \
   CMakeFiles/VoxelBridge.dir/src/Core/Application.cpp.o \
   CMakeFiles/VoxelBridge.dir/src/Core/Window.cpp.o \
+  CMakeFiles/VoxelBridge.dir/src/Gfx/Shader.cpp.o \
+  CMakeFiles/VoxelBridge.dir/src/Gfx/Renderer.cpp.o \
+  CMakeFiles/VoxelBridge.dir/src/Gfx/Mesh.cpp.o \
   vcpkg/installed/x64-linux/debug/lib/libglfw3.a \
   vcpkg/installed/x64-linux/debug/lib/libglad.a \
+  vcpkg/installed/x64-linux/debug/lib/libglm.a \
   vcpkg/installed/x64-linux/debug/lib/libimguid.a \
   vcpkg/installed/x64-linux/debug/lib/libglfw3.a \
   /usr/lib64/librt.a \
@@ -61,9 +65,17 @@ CMakeFiles/VoxelBridge.dir/src/Core/Application.cpp.o:
 
 CMakeFiles/VoxelBridge.dir/src/Core/Window.cpp.o:
 
+CMakeFiles/VoxelBridge.dir/src/Gfx/Shader.cpp.o:
+
+CMakeFiles/VoxelBridge.dir/src/Gfx/Renderer.cpp.o:
+
+CMakeFiles/VoxelBridge.dir/src/Gfx/Mesh.cpp.o:
+
 vcpkg/installed/x64-linux/debug/lib/libglfw3.a:
 
 vcpkg/installed/x64-linux/debug/lib/libglad.a:
+
+vcpkg/installed/x64-linux/debug/lib/libglm.a:
 
 vcpkg/installed/x64-linux/debug/lib/libimguid.a:
 

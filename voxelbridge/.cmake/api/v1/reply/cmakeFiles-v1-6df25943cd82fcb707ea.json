@@ -228,6 +228,18 @@
 		},
 		{
 			"path" : "vcpkg/installed/x64-linux/share/imgui/imgui-targets-release.cmake"
+		},
+		{
+			"path" : "vcpkg/installed/x64-linux/share/glm/glmConfigVersion.cmake"
+		},
+		{
+			"path" : "vcpkg/installed/x64-linux/share/glm/glmConfig.cmake"
+		},
+		{
+			"path" : "vcpkg/installed/x64-linux/share/glm/glmConfig-debug.cmake"
+		},
+		{
+			"path" : "vcpkg/installed/x64-linux/share/glm/glmConfig-release.cmake"
 		}
 	],
 	"kind" : "cmakeFiles",
