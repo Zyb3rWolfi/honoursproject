@@ -1,0 +1,14 @@
+{
+    "version": 1,
+    "revision": 0,
+    "rules": [
+        {
+            "primary-output": "CMakeFiles\\VoxelBridge.dir\\src\\Gfx\\Shader.cpp.obj",
+            "outputs": [
+                "C:\\Users\\anton\\CLionProjects\\voxelbridge\\vc140.pdb",
+                "CMakeFiles\\VoxelBridge.dir\\src\\Gfx\\Shader.cpp.obj.ddi"
+            ],
+            "requires": []
+        }
+    ]
+}

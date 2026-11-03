@@ -29,7 +29,7 @@ Ray Picking::ScreenToRay(glm::vec2 ndc, const glm::mat4 &view, const glm::mat4 &
 
 }
 
-bool IntersectRayPlaneY(const Ray& ray, float planeY, glm::vec3& outHitPoint) {
+bool Picking::IntersectRayPlaneY(const Ray& ray, float planeY, glm::vec3& outHitPoint) {
     // Avoid division by zero if ray is parallel to the plane
     if (std::abs(ray.direction.y) < 1e-6f)
         return false;

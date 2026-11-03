@@ -29,6 +29,7 @@ public:
     std::uint32_t IndexCount() const { return m_IndexCount; }
 
     static Mesh CreateCube(const glm::vec3& color = glm::vec3(0.8f));
+    static Mesh CreateSquareOutline(const glm::vec3& color = glm::vec3(0.8f));
     static Mesh CreateGrid(int halfExtent = 64, int majorEvery = 16);
 private:
     void Release();

@@ -39,7 +39,9 @@ private:
     Camera       m_Camera;
     Picking      m_Picking;
     Mesh         m_Cube = Mesh::CreateCube(glm::vec3(0.9f, 0.4f, 0.2f));
+    Ray m_ray;
     Mesh m_grid = Mesh::CreateGrid(64,16);
+    Mesh m_highlighted = Mesh::CreateSquareOutline(glm::vec3(255));
     bool m_ShowGrid = true;
 
     // Test-scene / input state (will move into Input and Editor classes later)
@@ -48,6 +50,12 @@ private:
     double m_LastMouseY  = 0.0;
     bool   m_WasLooking  = false;
     bool   m_ShowDemoWindow = true;
+
+    glm::vec3 hitPoint;
+    bool   m_ShowHit = true;
+    bool m_RayHit = false;
+
+    glm::ivec2 m_HoverCell;
 };
 
 #endif //VOXELBRIDGE_APPLICATION_H

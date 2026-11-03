@@ -136,8 +136,8 @@ Mesh Mesh::CreateCube(const glm::vec3& color) {
 
 Mesh Mesh::CreateGrid(int halfExtent, int majorEvery) {
 
-    const glm::vec3 minor(0.30f), majoor(0.50f);
-    const glm::vec3 axisX(0.85f, 0.25f, 0.25f), axisZ(0.25f, 0.45f, 0.90f);
+    const glm::vec3 minor(0.30f), majoor(0.50f); // Grey values
+    const glm::vec3 axisX(0.85f, 0.25f, 0.25f), axisZ(0.25f, 0.45f, 0.90f); // Red values and blue
     const glm::vec3 up(0.0f, 1.0f, 0.0f);
     const float e = static_cast<float>(halfExtent);
 
@@ -164,6 +164,30 @@ Mesh Mesh::CreateGrid(int halfExtent, int majorEvery) {
     addLine({-e, 0.0f, 0.0f}, {e, 0.0f, 0.0f}, axisX);   // X axis, red
     addLine({0.0f, 0.0f, -e}, {0.0f, 0.0f, e}, axisZ);   //
 
+    Mesh mesh(vertices, indices);
+    mesh.SetPrimitive(Primitive::Lines);
+    return mesh;
+}
+
+Mesh Mesh::CreateSquareOutline(const glm::vec3 &color) {
+
+    std::vector<Vertex> vertices;
+    std::vector<std::uint32_t> indices;
+    const glm::vec3 up(0.0f, 1.0f, 0.0f);
+    const glm::vec3 p0(0, 0, 0), p1(1, 0, 0), p2(1, 0, 1), p3(0, 0, 1);
+
+    auto addLine = [&](glm::vec3 a, glm::vec3 b) {
+        const auto base = static_cast<std::uint32_t>(vertices.size());
+        vertices.push_back({a, up, color});
+        vertices.push_back({b, up, color});
+        indices.push_back(base);
+        indices.push_back(base + 1);
+    };
+
+    addLine(p0, p1);
+    addLine(p1, p2);
+    addLine(p2, p3);
+    addLine(p3, p0);
     Mesh mesh(vertices, indices);
     mesh.SetPrimitive(Primitive::Lines);
     return mesh;

@@ -76,8 +76,17 @@ void Application::OnUpdate(float dt) {
     glm::mat4 view = m_Camera.View();
     glm::mat4 projection = m_Camera.Projection(m_Window.AspectRatio());
 
-    Ray ray = m_Picking.ScreenToRay(ndc, view, projection);
+    m_ray = m_Picking.ScreenToRay(ndc, view, projection);
+    m_RayHit = m_Picking.IntersectRayPlaneY(m_ray, 0, hitPoint);
+
+    if (m_RayHit) {
+        int fx, fy;
+        fx = floor(hitPoint.x);
+        m_HoverCell.x= static_cast<int>(std::floor(hitPoint.x));
+        m_HoverCell.y = static_cast<int>(std::floor(hitPoint.z));
+    }
 }
+
 
 // Responsible for rendering the application
 void Application::OnRender() {
@@ -91,6 +100,11 @@ void Application::OnRender() {
     if (m_ShowGrid) {
         m_Renderer.SubmitLines(m_grid);
     }
+
+    if (m_RayHit && m_ShowHit) {
+        glm::mat4 model = glm::translate(glm::mat4(1.0f), glm::vec3(m_HoverCell.x, 0.01f, m_HoverCell.y));
+        m_Renderer.SubmitLines(m_highlighted, model);
+    }
 }
 
 void Application::OnImGui() {
@@ -100,12 +114,15 @@ void Application::OnImGui() {
         ImGui::Text("Application average %.1f FPS", ImGui::GetIO().Framerate);
         ImGui::Separator();
         ImGui::Text("Window: %d x %d", m_Window.Width(), m_Window.Height());
-        ImGui::Text("Mouse Position: %.1f x %.1f", m_Window.cursorInNDC().x, m_Window.cursorInNDC().y );
+        ImGui::Text("Ray: %.3f", glm::dot(m_ray.direction, m_Camera.Forward()) );
+        ImGui::Text("Cell Selected: %.i, %.i", m_HoverCell.x, m_HoverCell.y);
+
         ImGui::Text("Camera: %.1f, %.1f, %.1f",
                     m_Camera.Position.x, m_Camera.Position.y, m_Camera.Position.z);
         ImGui::Text("WASD move, Space/Shift up/down, hold RMB to look");
-        ImGui::Text("NDC: (%.2f, %.2f)", m_Window.cursorInNDC().x, m_Window.cursorInNDC().y);
         ImGui::Checkbox("Show grid", &m_ShowGrid);
+        ImGui::Checkbox("Show Selected Grid", &m_ShowHit);
+
         ImGui::End();
     }
 }

@@ -1,0 +1,17 @@
+ninja_dyndep_version = 1.0
+build CMakeFiles\VoxelBridge.dir\src\main.cpp.obj: dyndep
+
+build CMakeFiles\VoxelBridge.dir\src\ImGUI\ImGuiWrapper.cpp.obj: dyndep
+
+build CMakeFiles\VoxelBridge.dir\src\Core\Application.cpp.obj: dyndep
+
+build CMakeFiles\VoxelBridge.dir\src\Core\Window.cpp.obj: dyndep
+
+build CMakeFiles\VoxelBridge.dir\src\Gfx\Shader.cpp.obj: dyndep
+
+build CMakeFiles\VoxelBridge.dir\src\Gfx\Renderer.cpp.obj: dyndep
+
+build CMakeFiles\VoxelBridge.dir\src\Gfx\Mesh.cpp.obj: dyndep
+
+build CMakeFiles\VoxelBridge.dir\src\Editor\Picking.cpp.obj: dyndep
+
