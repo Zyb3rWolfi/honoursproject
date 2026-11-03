@@ -26,7 +26,10 @@ add_executable(VoxelBridge src/main.cpp
         src/Gfx/Mesh.cpp
         src/Gfx/Mesh.h
         src/Gfx/Vertex.h
-        src/Gfx/Camera.h)
+        src/Gfx/Camera.h
+        src/Editor/Picking.cpp
+        src/Editor/Picking.h
+)
 
 target_link_libraries(VoxelBridge PRIVATE
     glfw

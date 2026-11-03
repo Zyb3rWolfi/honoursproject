@@ -10,6 +10,7 @@ set(CMAKE_DEPENDS_LANGUAGES
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
   "/home/antonscereskevics/RiderProjects/honoursproject/voxelbridge/src/Core/Application.cpp" "CMakeFiles/VoxelBridge.dir/src/Core/Application.cpp.o" "gcc" "CMakeFiles/VoxelBridge.dir/src/Core/Application.cpp.o.d"
   "/home/antonscereskevics/RiderProjects/honoursproject/voxelbridge/src/Core/Window.cpp" "CMakeFiles/VoxelBridge.dir/src/Core/Window.cpp.o" "gcc" "CMakeFiles/VoxelBridge.dir/src/Core/Window.cpp.o.d"
+  "/home/antonscereskevics/RiderProjects/honoursproject/voxelbridge/src/Editor/Picking.cpp" "CMakeFiles/VoxelBridge.dir/src/Editor/Picking.cpp.o" "gcc" "CMakeFiles/VoxelBridge.dir/src/Editor/Picking.cpp.o.d"
   "/home/antonscereskevics/RiderProjects/honoursproject/voxelbridge/src/Gfx/Mesh.cpp" "CMakeFiles/VoxelBridge.dir/src/Gfx/Mesh.cpp.o" "gcc" "CMakeFiles/VoxelBridge.dir/src/Gfx/Mesh.cpp.o.d"
   "/home/antonscereskevics/RiderProjects/honoursproject/voxelbridge/src/Gfx/Renderer.cpp" "CMakeFiles/VoxelBridge.dir/src/Gfx/Renderer.cpp.o" "gcc" "CMakeFiles/VoxelBridge.dir/src/Gfx/Renderer.cpp.o.d"
   "/home/antonscereskevics/RiderProjects/honoursproject/voxelbridge/src/Gfx/Shader.cpp" "CMakeFiles/VoxelBridge.dir/src/Gfx/Shader.cpp.o" "gcc" "CMakeFiles/VoxelBridge.dir/src/Gfx/Shader.cpp.o.d"

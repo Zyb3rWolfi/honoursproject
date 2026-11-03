@@ -4,6 +4,8 @@ file(REMOVE_RECURSE
   "CMakeFiles/VoxelBridge.dir/src/Core/Application.cpp.o.d"
   "CMakeFiles/VoxelBridge.dir/src/Core/Window.cpp.o"
   "CMakeFiles/VoxelBridge.dir/src/Core/Window.cpp.o.d"
+  "CMakeFiles/VoxelBridge.dir/src/Editor/Picking.cpp.o"
+  "CMakeFiles/VoxelBridge.dir/src/Editor/Picking.cpp.o.d"
   "CMakeFiles/VoxelBridge.dir/src/Gfx/Mesh.cpp.o"
   "CMakeFiles/VoxelBridge.dir/src/Gfx/Mesh.cpp.o.d"
   "CMakeFiles/VoxelBridge.dir/src/Gfx/Renderer.cpp.o"

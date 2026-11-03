@@ -103,11 +103,33 @@ CMakeFiles/VoxelBridge.dir/src/Core/Window.cpp.o: \
  /usr/include/c++/16/bits/uses_allocator.h \
  /usr/include/c++/16/bits/uses_allocator_args.h /usr/include/c++/16/tuple \
  /usr/include/c++/16/bits/invoke.h /usr/include/c++/16/bits/ranges_util.h \
- /home/antonscereskevics/RiderProjects/honoursproject/voxelbridge/vcpkg/installed/x64-linux/include/glad/glad.h \
- /home/antonscereskevics/RiderProjects/honoursproject/voxelbridge/vcpkg/installed/x64-linux/include/KHR/khrplatform.h \
+ /home/antonscereskevics/RiderProjects/honoursproject/voxelbridge/vcpkg/installed/x64-linux/include/glm/vec2.hpp \
+ /home/antonscereskevics/RiderProjects/honoursproject/voxelbridge/vcpkg/installed/x64-linux/include/glm/ext/vector_bool2.hpp \
+ /home/antonscereskevics/RiderProjects/honoursproject/voxelbridge/vcpkg/installed/x64-linux/include/glm/detail/type_vec2.hpp \
+ /home/antonscereskevics/RiderProjects/honoursproject/voxelbridge/vcpkg/installed/x64-linux/include/glm/detail/qualifier.hpp \
+ /home/antonscereskevics/RiderProjects/honoursproject/voxelbridge/vcpkg/installed/x64-linux/include/glm/detail/setup.hpp \
+ /usr/include/c++/16/cassert /usr/include/assert.h \
+ /home/antonscereskevics/RiderProjects/honoursproject/voxelbridge/vcpkg/installed/x64-linux/include/glm/simd/platform.h \
+ /usr/include/c++/16/cstdint \
  /usr/lib/gcc/x86_64-redhat-linux/16/include/stdint.h \
  /usr/include/stdint.h /usr/include/bits/stdint-uintn.h \
  /usr/include/bits/stdint-least.h \
+ /home/antonscereskevics/RiderProjects/honoursproject/voxelbridge/vcpkg/installed/x64-linux/include/glm/detail/type_vec2.inl \
+ /home/antonscereskevics/RiderProjects/honoursproject/voxelbridge/vcpkg/installed/x64-linux/include/glm/detail/compute_vector_relational.hpp \
+ /home/antonscereskevics/RiderProjects/honoursproject/voxelbridge/vcpkg/installed/x64-linux/include/glm/ext/vector_bool2_precision.hpp \
+ /home/antonscereskevics/RiderProjects/honoursproject/voxelbridge/vcpkg/installed/x64-linux/include/glm/ext/vector_float2.hpp \
+ /home/antonscereskevics/RiderProjects/honoursproject/voxelbridge/vcpkg/installed/x64-linux/include/glm/ext/vector_float2_precision.hpp \
+ /home/antonscereskevics/RiderProjects/honoursproject/voxelbridge/vcpkg/installed/x64-linux/include/glm/ext/vector_double2.hpp \
+ /home/antonscereskevics/RiderProjects/honoursproject/voxelbridge/vcpkg/installed/x64-linux/include/glm/ext/vector_double2_precision.hpp \
+ /home/antonscereskevics/RiderProjects/honoursproject/voxelbridge/vcpkg/installed/x64-linux/include/glm/ext/vector_int2.hpp \
+ /home/antonscereskevics/RiderProjects/honoursproject/voxelbridge/vcpkg/installed/x64-linux/include/glm/ext/vector_int2_sized.hpp \
+ /home/antonscereskevics/RiderProjects/honoursproject/voxelbridge/vcpkg/installed/x64-linux/include/glm/ext/scalar_int_sized.hpp \
+ /home/antonscereskevics/RiderProjects/honoursproject/voxelbridge/vcpkg/installed/x64-linux/include/glm/detail/setup.hpp \
+ /home/antonscereskevics/RiderProjects/honoursproject/voxelbridge/vcpkg/installed/x64-linux/include/glm/ext/vector_uint2.hpp \
+ /home/antonscereskevics/RiderProjects/honoursproject/voxelbridge/vcpkg/installed/x64-linux/include/glm/ext/vector_uint2_sized.hpp \
+ /home/antonscereskevics/RiderProjects/honoursproject/voxelbridge/vcpkg/installed/x64-linux/include/glm/ext/scalar_uint_sized.hpp \
+ /home/antonscereskevics/RiderProjects/honoursproject/voxelbridge/vcpkg/installed/x64-linux/include/glad/glad.h \
+ /home/antonscereskevics/RiderProjects/honoursproject/voxelbridge/vcpkg/installed/x64-linux/include/KHR/khrplatform.h \
  /home/antonscereskevics/RiderProjects/honoursproject/voxelbridge/vcpkg/installed/x64-linux/include/GLFW/glfw3.h \
  /usr/include/c++/16/stdexcept /usr/include/c++/16/exception \
  /usr/include/c++/16/bits/exception_ptr.h \

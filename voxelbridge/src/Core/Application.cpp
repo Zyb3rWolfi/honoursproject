@@ -10,6 +10,8 @@
 
 #include <stdexcept>
 
+#include "../Editor/Picking.h"
+
 Application::Application() : m_Window(WindowConfig{}) {
     if (!m_Gui.Init(m_Window.Handle(), "#version 330"))
         throw std::runtime_error("Failed to initialize ImGui");
@@ -69,6 +71,12 @@ void Application::OnUpdate(float dt) {
     m_LastMouseY = my;
 
     m_Angle += dt;
+
+    glm::vec2 ndc = m_Window.cursorInNDC();
+    glm::mat4 view = m_Camera.View();
+    glm::mat4 projection = m_Camera.Projection(m_Window.AspectRatio());
+
+    Ray ray = m_Picking.ScreenToRay(ndc, view, projection);
 }
 
 // Responsible for rendering the application
@@ -92,9 +100,11 @@ void Application::OnImGui() {
         ImGui::Text("Application average %.1f FPS", ImGui::GetIO().Framerate);
         ImGui::Separator();
         ImGui::Text("Window: %d x %d", m_Window.Width(), m_Window.Height());
+        ImGui::Text("Mouse Position: %.1f x %.1f", m_Window.cursorInNDC().x, m_Window.cursorInNDC().y );
         ImGui::Text("Camera: %.1f, %.1f, %.1f",
                     m_Camera.Position.x, m_Camera.Position.y, m_Camera.Position.z);
         ImGui::Text("WASD move, Space/Shift up/down, hold RMB to look");
+        ImGui::Text("NDC: (%.2f, %.2f)", m_Window.cursorInNDC().x, m_Window.cursorInNDC().y);
         ImGui::Checkbox("Show grid", &m_ShowGrid);
         ImGui::End();
     }

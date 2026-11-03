@@ -104,6 +104,31 @@ CMakeFiles/VoxelBridge.dir/src/main.cpp.o: \
  /usr/include/c++/16/bits/uses_allocator.h \
  /usr/include/c++/16/bits/uses_allocator_args.h /usr/include/c++/16/tuple \
  /usr/include/c++/16/bits/invoke.h /usr/include/c++/16/bits/ranges_util.h \
+ /home/antonscereskevics/RiderProjects/honoursproject/voxelbridge/vcpkg/installed/x64-linux/include/glm/vec2.hpp \
+ /home/antonscereskevics/RiderProjects/honoursproject/voxelbridge/vcpkg/installed/x64-linux/include/glm/ext/vector_bool2.hpp \
+ /home/antonscereskevics/RiderProjects/honoursproject/voxelbridge/vcpkg/installed/x64-linux/include/glm/detail/type_vec2.hpp \
+ /home/antonscereskevics/RiderProjects/honoursproject/voxelbridge/vcpkg/installed/x64-linux/include/glm/detail/qualifier.hpp \
+ /home/antonscereskevics/RiderProjects/honoursproject/voxelbridge/vcpkg/installed/x64-linux/include/glm/detail/setup.hpp \
+ /usr/include/c++/16/cassert /usr/include/assert.h \
+ /home/antonscereskevics/RiderProjects/honoursproject/voxelbridge/vcpkg/installed/x64-linux/include/glm/simd/platform.h \
+ /usr/include/c++/16/cstdint \
+ /usr/lib/gcc/x86_64-redhat-linux/16/include/stdint.h \
+ /usr/include/stdint.h /usr/include/bits/stdint-uintn.h \
+ /usr/include/bits/stdint-least.h \
+ /home/antonscereskevics/RiderProjects/honoursproject/voxelbridge/vcpkg/installed/x64-linux/include/glm/detail/type_vec2.inl \
+ /home/antonscereskevics/RiderProjects/honoursproject/voxelbridge/vcpkg/installed/x64-linux/include/glm/detail/compute_vector_relational.hpp \
+ /home/antonscereskevics/RiderProjects/honoursproject/voxelbridge/vcpkg/installed/x64-linux/include/glm/ext/vector_bool2_precision.hpp \
+ /home/antonscereskevics/RiderProjects/honoursproject/voxelbridge/vcpkg/installed/x64-linux/include/glm/ext/vector_float2.hpp \
+ /home/antonscereskevics/RiderProjects/honoursproject/voxelbridge/vcpkg/installed/x64-linux/include/glm/ext/vector_float2_precision.hpp \
+ /home/antonscereskevics/RiderProjects/honoursproject/voxelbridge/vcpkg/installed/x64-linux/include/glm/ext/vector_double2.hpp \
+ /home/antonscereskevics/RiderProjects/honoursproject/voxelbridge/vcpkg/installed/x64-linux/include/glm/ext/vector_double2_precision.hpp \
+ /home/antonscereskevics/RiderProjects/honoursproject/voxelbridge/vcpkg/installed/x64-linux/include/glm/ext/vector_int2.hpp \
+ /home/antonscereskevics/RiderProjects/honoursproject/voxelbridge/vcpkg/installed/x64-linux/include/glm/ext/vector_int2_sized.hpp \
+ /home/antonscereskevics/RiderProjects/honoursproject/voxelbridge/vcpkg/installed/x64-linux/include/glm/ext/scalar_int_sized.hpp \
+ /home/antonscereskevics/RiderProjects/honoursproject/voxelbridge/vcpkg/installed/x64-linux/include/glm/detail/setup.hpp \
+ /home/antonscereskevics/RiderProjects/honoursproject/voxelbridge/vcpkg/installed/x64-linux/include/glm/ext/vector_uint2.hpp \
+ /home/antonscereskevics/RiderProjects/honoursproject/voxelbridge/vcpkg/installed/x64-linux/include/glm/ext/vector_uint2_sized.hpp \
+ /home/antonscereskevics/RiderProjects/honoursproject/voxelbridge/vcpkg/installed/x64-linux/include/glm/ext/scalar_uint_sized.hpp \
  /home/antonscereskevics/RiderProjects/honoursproject/voxelbridge/src/Core/../Gfx/Renderer.h \
  /home/antonscereskevics/RiderProjects/honoursproject/voxelbridge/src/Core/../Gfx/Camera.h \
  /home/antonscereskevics/RiderProjects/honoursproject/voxelbridge/vcpkg/installed/x64-linux/include/glm/glm.hpp \
@@ -128,12 +153,7 @@ CMakeFiles/VoxelBridge.dir/src/main.cpp.o: \
  /usr/include/c++/16/tr1/poly_laguerre.tcc \
  /usr/include/c++/16/tr1/riemann_zeta.tcc \
  /home/antonscereskevics/RiderProjects/honoursproject/voxelbridge/vcpkg/installed/x64-linux/include/glm/detail/setup.hpp \
- /usr/include/c++/16/cassert /usr/include/assert.h \
- /home/antonscereskevics/RiderProjects/honoursproject/voxelbridge/vcpkg/installed/x64-linux/include/glm/simd/platform.h \
- /usr/include/c++/16/cstdint \
- /usr/lib/gcc/x86_64-redhat-linux/16/include/stdint.h \
- /usr/include/stdint.h /usr/include/bits/stdint-uintn.h \
- /usr/include/bits/stdint-least.h /usr/include/c++/16/climits \
+ /usr/include/c++/16/climits \
  /usr/lib/gcc/x86_64-redhat-linux/16/include/limits.h \
  /usr/lib/gcc/x86_64-redhat-linux/16/include/syslimits.h \
  /usr/include/limits.h /usr/include/bits/posix1_lim.h \
@@ -143,25 +163,6 @@ CMakeFiles/VoxelBridge.dir/src/main.cpp.o: \
  /usr/include/bits/uio_lim.h /usr/include/c++/16/cfloat \
  /usr/lib/gcc/x86_64-redhat-linux/16/include/float.h \
  /home/antonscereskevics/RiderProjects/honoursproject/voxelbridge/vcpkg/installed/x64-linux/include/glm/fwd.hpp \
- /home/antonscereskevics/RiderProjects/honoursproject/voxelbridge/vcpkg/installed/x64-linux/include/glm/detail/qualifier.hpp \
- /home/antonscereskevics/RiderProjects/honoursproject/voxelbridge/vcpkg/installed/x64-linux/include/glm/detail/setup.hpp \
- /home/antonscereskevics/RiderProjects/honoursproject/voxelbridge/vcpkg/installed/x64-linux/include/glm/vec2.hpp \
- /home/antonscereskevics/RiderProjects/honoursproject/voxelbridge/vcpkg/installed/x64-linux/include/glm/ext/vector_bool2.hpp \
- /home/antonscereskevics/RiderProjects/honoursproject/voxelbridge/vcpkg/installed/x64-linux/include/glm/detail/type_vec2.hpp \
- /home/antonscereskevics/RiderProjects/honoursproject/voxelbridge/vcpkg/installed/x64-linux/include/glm/detail/type_vec2.inl \
- /home/antonscereskevics/RiderProjects/honoursproject/voxelbridge/vcpkg/installed/x64-linux/include/glm/detail/compute_vector_relational.hpp \
- /home/antonscereskevics/RiderProjects/honoursproject/voxelbridge/vcpkg/installed/x64-linux/include/glm/ext/vector_bool2_precision.hpp \
- /home/antonscereskevics/RiderProjects/honoursproject/voxelbridge/vcpkg/installed/x64-linux/include/glm/ext/vector_float2.hpp \
- /home/antonscereskevics/RiderProjects/honoursproject/voxelbridge/vcpkg/installed/x64-linux/include/glm/ext/vector_float2_precision.hpp \
- /home/antonscereskevics/RiderProjects/honoursproject/voxelbridge/vcpkg/installed/x64-linux/include/glm/ext/vector_double2.hpp \
- /home/antonscereskevics/RiderProjects/honoursproject/voxelbridge/vcpkg/installed/x64-linux/include/glm/ext/vector_double2_precision.hpp \
- /home/antonscereskevics/RiderProjects/honoursproject/voxelbridge/vcpkg/installed/x64-linux/include/glm/ext/vector_int2.hpp \
- /home/antonscereskevics/RiderProjects/honoursproject/voxelbridge/vcpkg/installed/x64-linux/include/glm/ext/vector_int2_sized.hpp \
- /home/antonscereskevics/RiderProjects/honoursproject/voxelbridge/vcpkg/installed/x64-linux/include/glm/ext/scalar_int_sized.hpp \
- /home/antonscereskevics/RiderProjects/honoursproject/voxelbridge/vcpkg/installed/x64-linux/include/glm/detail/setup.hpp \
- /home/antonscereskevics/RiderProjects/honoursproject/voxelbridge/vcpkg/installed/x64-linux/include/glm/ext/vector_uint2.hpp \
- /home/antonscereskevics/RiderProjects/honoursproject/voxelbridge/vcpkg/installed/x64-linux/include/glm/ext/vector_uint2_sized.hpp \
- /home/antonscereskevics/RiderProjects/honoursproject/voxelbridge/vcpkg/installed/x64-linux/include/glm/ext/scalar_uint_sized.hpp \
  /home/antonscereskevics/RiderProjects/honoursproject/voxelbridge/vcpkg/installed/x64-linux/include/glm/vec3.hpp \
  /home/antonscereskevics/RiderProjects/honoursproject/voxelbridge/vcpkg/installed/x64-linux/include/glm/ext/vector_bool3.hpp \
  /home/antonscereskevics/RiderProjects/honoursproject/voxelbridge/vcpkg/installed/x64-linux/include/glm/detail/type_vec3.hpp \
@@ -305,6 +306,7 @@ CMakeFiles/VoxelBridge.dir/src/main.cpp.o: \
  /home/antonscereskevics/RiderProjects/honoursproject/voxelbridge/src/Core/../Gfx/Shader.h \
  /home/antonscereskevics/RiderProjects/honoursproject/voxelbridge/src/Core/../ImGUI/ImGuiWrapper.h \
  /home/antonscereskevics/RiderProjects/honoursproject/voxelbridge/src/Core/../Core/Window.h \
+ /home/antonscereskevics/RiderProjects/honoursproject/voxelbridge/src/Core/../Editor/Picking.h \
  /home/antonscereskevics/RiderProjects/honoursproject/voxelbridge/src/Core/../Gfx/Mesh.h \
  /usr/include/c++/16/exception /usr/include/c++/16/bits/exception_ptr.h \
  /usr/include/c++/16/bits/cxxabi_init_exception.h \

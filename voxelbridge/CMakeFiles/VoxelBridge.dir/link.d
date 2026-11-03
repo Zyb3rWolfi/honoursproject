@@ -9,6 +9,7 @@ VoxelBridge: \
   CMakeFiles/VoxelBridge.dir/src/Gfx/Shader.cpp.o \
   CMakeFiles/VoxelBridge.dir/src/Gfx/Renderer.cpp.o \
   CMakeFiles/VoxelBridge.dir/src/Gfx/Mesh.cpp.o \
+  CMakeFiles/VoxelBridge.dir/src/Editor/Picking.cpp.o \
   vcpkg/installed/x64-linux/debug/lib/libglfw3.a \
   vcpkg/installed/x64-linux/debug/lib/libglad.a \
   vcpkg/installed/x64-linux/debug/lib/libglm.a \
@@ -70,6 +71,8 @@ CMakeFiles/VoxelBridge.dir/src/Gfx/Shader.cpp.o:
 CMakeFiles/VoxelBridge.dir/src/Gfx/Renderer.cpp.o:
 
 CMakeFiles/VoxelBridge.dir/src/Gfx/Mesh.cpp.o:
+
+CMakeFiles/VoxelBridge.dir/src/Editor/Picking.cpp.o:
 
 vcpkg/installed/x64-linux/debug/lib/libglfw3.a:
 

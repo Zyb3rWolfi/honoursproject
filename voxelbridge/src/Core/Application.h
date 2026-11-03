@@ -9,6 +9,7 @@
 #include "../Gfx/Renderer.h"
 #include "../ImGUI/ImGuiWrapper.h"
 #include "../Core/Window.h"
+#include "../Editor/Picking.h"
 #include "../ImGUI/ImGuiWrapper.h"
 #include "../Gfx/Camera.h"
 #include "../Gfx/Mesh.h"
@@ -36,6 +37,7 @@ private:
     ImGuiWrapper m_Gui;
     Renderer     m_Renderer;
     Camera       m_Camera;
+    Picking      m_Picking;
     Mesh         m_Cube = Mesh::CreateCube(glm::vec3(0.9f, 0.4f, 0.2f));
     Mesh m_grid = Mesh::CreateGrid(64,16);
     bool m_ShowGrid = true;
