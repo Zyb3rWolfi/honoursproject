@@ -31,7 +31,7 @@ CMAKE_CXX_COMPILER:FILEPATH=C:/Program Files/Microsoft Visual Studio/18/Professi
 CMAKE_CXX_FLAGS:STRING=/DWIN32 /D_WINDOWS /EHsc
 
 //Flags used by the CXX compiler during DEBUG builds.
-CMAKE_CXX_FLAGS_DEBUG:STRING=/Zi /Ob0 /Od /RTC1
+CMAKE_CXX_FLAGS_DEBUG:STRING=/Ob0 /Od
 
 //Flags used by the CXX compiler during MINSIZEREL builds.
 CMAKE_CXX_FLAGS_MINSIZEREL:STRING=/O1 /Ob1 /DNDEBUG
@@ -40,13 +40,13 @@ CMAKE_CXX_FLAGS_MINSIZEREL:STRING=/O1 /Ob1 /DNDEBUG
 CMAKE_CXX_FLAGS_RELEASE:STRING=/O2 /Ob2 /DNDEBUG
 
 //Flags used by the CXX compiler during RELWITHDEBINFO builds.
-CMAKE_CXX_FLAGS_RELWITHDEBINFO:STRING=/Zi /O2 /Ob1 /DNDEBUG
+CMAKE_CXX_FLAGS_RELWITHDEBINFO:STRING=/O2 /Ob1 /DNDEBUG
 
 //Libraries linked by default with all C++ applications.
 CMAKE_CXX_STANDARD_LIBRARIES:STRING=kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib
 
 //Flags used by the linker during all build types.
-CMAKE_EXE_LINKER_FLAGS:STRING=/machine:x64
+CMAKE_EXE_LINKER_FLAGS:STRING=
 
 //Flags used by the linker during DEBUG builds.
 CMAKE_EXE_LINKER_FLAGS_DEBUG:STRING=/debug /INCREMENTAL
@@ -80,7 +80,7 @@ CMAKE_MAKE_PROGRAM:FILEPATH=C:/Program Files/JetBrains/CLion 2026.2.4/bin/ninja/
 
 //Flags used by the linker during the creation of modules during
 // all build types.
-CMAKE_MODULE_LINKER_FLAGS:STRING=/machine:x64
+CMAKE_MODULE_LINKER_FLAGS:STRING=
 
 //Flags used by the linker during the creation of modules during
 // DEBUG builds.
@@ -136,7 +136,7 @@ CMAKE_RC_FLAGS_RELWITHDEBINFO:STRING=
 
 //Flags used by the linker during the creation of shared libraries
 // during all build types.
-CMAKE_SHARED_LINKER_FLAGS:STRING=/machine:x64
+CMAKE_SHARED_LINKER_FLAGS:STRING=
 
 //Flags used by the linker during the creation of shared libraries
 // during DEBUG builds.
@@ -163,7 +163,7 @@ CMAKE_SKIP_RPATH:BOOL=NO
 
 //Flags used by the archiver during the creation of static libraries
 // during all build types.
-CMAKE_STATIC_LINKER_FLAGS:STRING=/machine:x64
+CMAKE_STATIC_LINKER_FLAGS:STRING=
 
 //Flags used by the archiver during the creation of static libraries
 // during DEBUG builds.
@@ -253,6 +253,9 @@ glad_DIR:PATH=C:/Users/anton/CLionProjects/voxelbridge/vcpkg/installed/x64-windo
 
 //The directory containing a CMake configuration file for glfw3.
 glfw3_DIR:PATH=C:/Users/anton/CLionProjects/voxelbridge/vcpkg/installed/x64-windows/share/glfw3
+
+//The directory containing a CMake configuration file for glm.
+glm_DIR:PATH=C:/Users/anton/CLionProjects/voxelbridge/vcpkg/installed/x64-windows/share/glm
 
 //The directory containing a CMake configuration file for imgui.
 imgui_DIR:PATH=C:/Users/anton/CLionProjects/voxelbridge/vcpkg/installed/x64-windows/share/imgui
