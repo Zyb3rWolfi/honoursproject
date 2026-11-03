@@ -1,0 +1,60 @@
+{
+	"bmi-installation" : null,
+	"compiler-frontend-variant" : "MSVC",
+	"compiler-id" : "MSVC",
+	"compiler-simulate-id" : "",
+	"config" : "Debug",
+	"cxx-modules" : {},
+	"database-info" : null,
+	"dir-cur-bld" : "C:/Users/anton/CLionProjects/voxelbridge",
+	"dir-cur-src" : "C:/Users/anton/CLionProjects/voxelbridge",
+	"dir-top-bld" : "C:/Users/anton/CLionProjects/voxelbridge",
+	"dir-top-src" : "C:/Users/anton/CLionProjects/voxelbridge",
+	"exports" : [],
+	"forward-modules-from-target-dirs" : [],
+	"include-dirs" : 
+	[
+		"vcpkg\\installed\\x64-windows\\include"
+	],
+	"language" : "CXX",
+	"linked-target-dirs" : [],
+	"module-dir" : "C:/Users/anton/CLionProjects/voxelbridge/CMakeFiles/VoxelBridge.dir",
+	"sources" : 
+	{
+		"CMakeFiles/VoxelBridge.dir/src/Core/Application.cpp.obj" : 
+		{
+			"language" : "CXX",
+			"source" : "C:/Users/anton/CLionProjects/voxelbridge/src/Core/Application.cpp"
+		},
+		"CMakeFiles/VoxelBridge.dir/src/Core/Window.cpp.obj" : 
+		{
+			"language" : "CXX",
+			"source" : "C:/Users/anton/CLionProjects/voxelbridge/src/Core/Window.cpp"
+		},
+		"CMakeFiles/VoxelBridge.dir/src/Gfx/Mesh.cpp.obj" : 
+		{
+			"language" : "CXX",
+			"source" : "C:/Users/anton/CLionProjects/voxelbridge/src/Gfx/Mesh.cpp"
+		},
+		"CMakeFiles/VoxelBridge.dir/src/Gfx/Renderer.cpp.obj" : 
+		{
+			"language" : "CXX",
+			"source" : "C:/Users/anton/CLionProjects/voxelbridge/src/Gfx/Renderer.cpp"
+		},
+		"CMakeFiles/VoxelBridge.dir/src/Gfx/Shader.cpp.obj" : 
+		{
+			"language" : "CXX",
+			"source" : "C:/Users/anton/CLionProjects/voxelbridge/src/Gfx/Shader.cpp"
+		},
+		"CMakeFiles/VoxelBridge.dir/src/ImGUI/ImGuiWrapper.cpp.obj" : 
+		{
+			"language" : "CXX",
+			"source" : "C:/Users/anton/CLionProjects/voxelbridge/src/ImGUI/ImGuiWrapper.cpp"
+		},
+		"CMakeFiles/VoxelBridge.dir/src/main.cpp.obj" : 
+		{
+			"language" : "CXX",
+			"source" : "C:/Users/anton/CLionProjects/voxelbridge/src/main.cpp"
+		}
+	}
+}

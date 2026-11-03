@@ -1,7 +1,7 @@
 # CMake build output
 cmake-build-debug/
 cmake-build-release/
-
+.cmake
 # vcpkg generated files
 vcpkg/installed/
 vcpkg/buildtrees/
