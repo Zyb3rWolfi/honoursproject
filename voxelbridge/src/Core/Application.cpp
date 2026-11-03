@@ -10,6 +10,8 @@
 
 #include <stdexcept>
 
+#include "../Editor/Picking.h"
+
 Application::Application() : m_Window(WindowConfig{}) {
     if (!m_Gui.Init(m_Window.Handle(), "#version 330"))
         throw std::runtime_error("Failed to initialize ImGui");
@@ -69,7 +71,22 @@ void Application::OnUpdate(float dt) {
     m_LastMouseY = my;
 
     m_Angle += dt;
+
+    glm::vec2 ndc = m_Window.cursorInNDC();
+    glm::mat4 view = m_Camera.View();
+    glm::mat4 projection = m_Camera.Projection(m_Window.AspectRatio());
+
+    m_ray = m_Picking.ScreenToRay(ndc, view, projection);
+    m_RayHit = m_Picking.IntersectRayPlaneY(m_ray, 0, hitPoint);
+
+    if (m_RayHit) {
+        int fx, fy;
+        fx = floor(hitPoint.x);
+        m_HoverCell.x= static_cast<int>(std::floor(hitPoint.x));
+        m_HoverCell.y = static_cast<int>(std::floor(hitPoint.z));
+    }
 }
+
 
 // Responsible for rendering the application
 void Application::OnRender() {
@@ -79,6 +96,15 @@ void Application::OnRender() {
     // Rendering the Cube
     const glm::mat4 model = glm::rotate(glm::mat4(1.0f), m_Angle, glm::vec3(0.0f, 1.0f, 0.0f));
     m_Renderer.Submit(m_Cube, model);
+
+    if (m_ShowGrid) {
+        m_Renderer.SubmitLines(m_grid);
+    }
+
+    if (m_RayHit && m_ShowHit) {
+        glm::mat4 model = glm::translate(glm::mat4(1.0f), glm::vec3(m_HoverCell.x, 0.01f, m_HoverCell.y));
+        m_Renderer.SubmitLines(m_highlighted, model);
+    }
 }
 
 void Application::OnImGui() {
@@ -88,9 +114,15 @@ void Application::OnImGui() {
         ImGui::Text("Application average %.1f FPS", ImGui::GetIO().Framerate);
         ImGui::Separator();
         ImGui::Text("Window: %d x %d", m_Window.Width(), m_Window.Height());
+        ImGui::Text("Ray: %.3f", glm::dot(m_ray.direction, m_Camera.Forward()) );
+        ImGui::Text("Cell Selected: %.i, %.i", m_HoverCell.x, m_HoverCell.y);
+
         ImGui::Text("Camera: %.1f, %.1f, %.1f",
                     m_Camera.Position.x, m_Camera.Position.y, m_Camera.Position.z);
         ImGui::Text("WASD move, Space/Shift up/down, hold RMB to look");
+        ImGui::Checkbox("Show grid", &m_ShowGrid);
+        ImGui::Checkbox("Show Selected Grid", &m_ShowHit);
+
         ImGui::End();
     }
 }

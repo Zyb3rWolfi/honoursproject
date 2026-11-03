@@ -39,9 +39,30 @@ void main() {
 }
 )";
 
+static const char* kLineVertexSource = R"(
+#version 330 core
+layout(location = 0) in vec3 aPos;
+layout(location = 2) in vec3 aColor;
+uniform mat4 uViewProj;
+uniform mat4 uModel;
+out vec3 vColor;
+void main() {
+    gl_Position = uViewProj * uModel * vec4(aPos, 1.0);
+    vColor = aColor;
+}
+)";
+
+static const char* kLineFragmentSource = R"(
+#version 330 core
+in vec3 vColor;
+out vec4 FragColor;
+void main() { FragColor = vec4(vColor, 1.0); }
+)";
+
+
 // Init the renderer
 Renderer::Renderer()
-    : m_Shader(kVertexSource, kFragmentSource) {
+    : m_Shader(kVertexSource, kFragmentSource), m_LineShader(kLineVertexSource, kLineFragmentSource) {
     glEnable(GL_DEPTH_TEST);
     glEnable(GL_CULL_FACE);
     glCullFace(GL_BACK);
@@ -56,8 +77,13 @@ void Renderer::Clear(const glm::vec3 &color) {
 
 // Begin our Scene
 void Renderer::BeginScene(const Camera& camera, float aspectRatio) {
+    const glm::mat4 viewProj = camera.Projection(aspectRatio) * camera.View();
+
     m_Shader.Bind();
-    m_Shader.SetMat4("uViewProj", camera.Projection(aspectRatio) * camera.View());
+    m_Shader.SetMat4("uViewProj", viewProj);
+
+    m_LineShader.Bind();
+    m_LineShader.SetMat4("uViewProj", viewProj);
 }
 
 // Select the current mesh for render
@@ -65,5 +91,11 @@ void Renderer::Submit(const Mesh& mesh, const glm::mat4& model) {
     m_Shader.Bind();
     m_Shader.SetMat4("uModel", model);
     mesh.Draw();
+}
+
+void Renderer::SubmitLines(const Mesh& mesh, const glm::mat4& model) {
+    m_LineShader.Bind();
+    m_LineShader.SetMat4("uModel", model);
+    mesh.Draw();    // Draw() already knows it's a line mesh
 }
 

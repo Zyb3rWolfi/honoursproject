@@ -10,6 +10,8 @@
 #include <cstdio>
 #include <stdexcept>
 
+#include "glm/vec2.hpp"
+
 static void glfw_error_callback(int error, const char* description) {
     std::fprintf(stderr, "GLFW Error %d: %s\n", error, description);
 }
@@ -85,3 +87,20 @@ void Window::SetTitle(const std::string& title) {
 }
 
 double Window::Time() { return glfwGetTime(); }
+
+glm::vec2 Window::cursorInNDC() const {
+    double x, y;
+    int windowWidth, windowHeight;
+    glfwGetCursorPos(m_Window, &x, &y);
+    glfwGetWindowSize(m_Window, &windowWidth, &windowHeight);
+
+    if (windowWidth == 0 || windowHeight == 0)     // minimised
+        return glm::vec2(0.0f);
+
+    const float ndcX = static_cast<float>(x / windowWidth)  * 2.0f - 1.0f;
+    const float ndcY = 1.0f - static_cast<float>(y / windowHeight) * 2.0f;
+
+    return glm::vec2(ndcX, ndcY);
+
+
+}

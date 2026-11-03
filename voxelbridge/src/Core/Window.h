@@ -7,6 +7,8 @@
 
 #include <string>
 
+#include "glm/vec2.hpp"
+
 struct GLFWwindow;
 
 struct WindowConfig {
@@ -31,6 +33,7 @@ public:
     void SwapBuffers() const;
 
     GLFWwindow* Handle() const { return m_Window; }
+    glm::vec2 cursorInNDC() const;
 
     // Framebuffer size in pixels
     int   Width()  const { return m_Width; }

@@ -44,7 +44,8 @@ Mesh::Mesh(Mesh&& other) noexcept
     : m_Vao(std::exchange(other.m_Vao, 0)),
       m_Vbo(std::exchange(other.m_Vbo, 0)),
       m_Ebo(std::exchange(other.m_Ebo, 0)),
-      m_IndexCount(std::exchange(other.m_IndexCount, 0)) {}
+      m_IndexCount(std::exchange(other.m_IndexCount, 0)),
+        primitive_(other.primitive_){}
 
 Mesh& Mesh::operator=(Mesh&& other) noexcept {
     if (this != &other) {
@@ -52,7 +53,8 @@ Mesh& Mesh::operator=(Mesh&& other) noexcept {
         m_Vao = std::exchange(other.m_Vao, 0);
         m_Vbo = std::exchange(other.m_Vbo, 0);
         m_Ebo = std::exchange(other.m_Ebo, 0);
-        m_IndexCount = std::exchange(other.m_IndexCount, 0);
+        m_IndexCount = std::exchange(other.m_IndexCount, 0),
+        primitive_ = other.primitive_;
     }
     return *this;
 }
@@ -88,7 +90,8 @@ void Mesh::Draw() const {
     if (m_IndexCount == 0)
         return;
     glBindVertexArray(m_Vao);
-    glDrawElements(GL_TRIANGLES, static_cast<GLsizei>(m_IndexCount), GL_UNSIGNED_INT, nullptr);
+    glDrawElements(primitive_ == Primitive::Lines ? GL_LINES : GL_TRIANGLES,
+                   static_cast<GLsizei>(m_IndexCount), GL_UNSIGNED_INT, nullptr);
     glBindVertexArray(0);
 }
 
@@ -126,4 +129,66 @@ Mesh Mesh::CreateCube(const glm::vec3& color) {
     }
 
     return Mesh(vertices, indices);
+}
+
+// This is responsible for rendering the grid
+// For every whole number from -64 to 64, it would add two lines, one parralell to each axis.
+
+Mesh Mesh::CreateGrid(int halfExtent, int majorEvery) {
+
+    const glm::vec3 minor(0.30f), majoor(0.50f); // Grey values
+    const glm::vec3 axisX(0.85f, 0.25f, 0.25f), axisZ(0.25f, 0.45f, 0.90f); // Red values and blue
+    const glm::vec3 up(0.0f, 1.0f, 0.0f);
+    const float e = static_cast<float>(halfExtent);
+
+    std::vector<Vertex> vertices;
+    std::vector<std::uint32_t> indices;
+
+    // Helper: one line = vertices + 2 indeces
+
+    auto addLine = [&](glm::vec3 a, glm::vec3 b, glm::vec3 color) {
+        const auto base = static_cast<std::uint32_t>(vertices.size());
+        vertices.push_back({a, up, color});
+        vertices.push_back({b, up, color});
+        indices.push_back(base);
+        indices.push_back(base + 1);
+    };
+
+    for (int i = -halfExtent; i <= halfExtent; i++) {
+        if (i==0) continue;
+        const glm::vec3& c = (i % majorEvery == 0) ? majoor : minor;
+        const float f = static_cast<float>(i);
+        addLine({f, 0.0f, -e}, {f, 0.0f, e}, c);    // a line running along Z at x = i
+        addLine({-e, 0.0f, f}, {e, 0.0f, f}, c);    // a line running along X at z = i
+    }
+    addLine({-e, 0.0f, 0.0f}, {e, 0.0f, 0.0f}, axisX);   // X axis, red
+    addLine({0.0f, 0.0f, -e}, {0.0f, 0.0f, e}, axisZ);   //
+
+    Mesh mesh(vertices, indices);
+    mesh.SetPrimitive(Primitive::Lines);
+    return mesh;
+}
+
+Mesh Mesh::CreateSquareOutline(const glm::vec3 &color) {
+
+    std::vector<Vertex> vertices;
+    std::vector<std::uint32_t> indices;
+    const glm::vec3 up(0.0f, 1.0f, 0.0f);
+    const glm::vec3 p0(0, 0, 0), p1(1, 0, 0), p2(1, 0, 1), p3(0, 0, 1);
+
+    auto addLine = [&](glm::vec3 a, glm::vec3 b) {
+        const auto base = static_cast<std::uint32_t>(vertices.size());
+        vertices.push_back({a, up, color});
+        vertices.push_back({b, up, color});
+        indices.push_back(base);
+        indices.push_back(base + 1);
+    };
+
+    addLine(p0, p1);
+    addLine(p1, p2);
+    addLine(p2, p3);
+    addLine(p3, p0);
+    Mesh mesh(vertices, indices);
+    mesh.SetPrimitive(Primitive::Lines);
+    return mesh;
 }

@@ -31,6 +31,14 @@
 			"language" : "CXX",
 			"source" : "C:/Users/anton/CLionProjects/voxelbridge/src/Core/Window.cpp"
 		},
+<<<<<<< HEAD
+=======
+		"CMakeFiles/VoxelBridge.dir/src/Editor/Picking.cpp.obj" : 
+		{
+			"language" : "CXX",
+			"source" : "C:/Users/anton/CLionProjects/voxelbridge/src/Editor/Picking.cpp"
+		},
+>>>>>>> reference_grid
 		"CMakeFiles/VoxelBridge.dir/src/Gfx/Mesh.cpp.obj" : 
 		{
 			"language" : "CXX",

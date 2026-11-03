@@ -8,6 +8,8 @@
 
 class Mesh {
 public:
+    enum class Primitive { Triangle, Lines};
+
     Mesh();
     Mesh(const std::vector<Vertex>& vertices,
          const std::vector<std::uint32_t>& indices);
@@ -22,12 +24,17 @@ public:
 
     void Draw() const;
 
+    void SetPrimitive(Primitive primitive) {primitive_ = primitive;};
+
     std::uint32_t IndexCount() const { return m_IndexCount; }
 
     static Mesh CreateCube(const glm::vec3& color = glm::vec3(0.8f));
+    static Mesh CreateSquareOutline(const glm::vec3& color = glm::vec3(0.8f));
+    static Mesh CreateGrid(int halfExtent = 64, int majorEvery = 16);
 private:
     void Release();
-
+    std::uint32_t m_indexCount = 0;
+    Primitive primitive_ = Primitive::Triangle;
     unsigned int m_Vao = 0;
     unsigned int m_Vbo = 0;
     unsigned int m_Ebo = 0;

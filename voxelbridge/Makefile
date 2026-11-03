@@ -184,6 +184,30 @@ src/Core/Window.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/VoxelBridge.dir/build.make CMakeFiles/VoxelBridge.dir/src/Core/Window.cpp.s
 .PHONY : src/Core/Window.cpp.s
 
+src/Editor/Picking.o: src/Editor/Picking.cpp.o
+.PHONY : src/Editor/Picking.o
+
+# target to build an object file
+src/Editor/Picking.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/VoxelBridge.dir/build.make CMakeFiles/VoxelBridge.dir/src/Editor/Picking.cpp.o
+.PHONY : src/Editor/Picking.cpp.o
+
+src/Editor/Picking.i: src/Editor/Picking.cpp.i
+.PHONY : src/Editor/Picking.i
+
+# target to preprocess a source file
+src/Editor/Picking.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/VoxelBridge.dir/build.make CMakeFiles/VoxelBridge.dir/src/Editor/Picking.cpp.i
+.PHONY : src/Editor/Picking.cpp.i
+
+src/Editor/Picking.s: src/Editor/Picking.cpp.s
+.PHONY : src/Editor/Picking.s
+
+# target to generate assembly for a file
+src/Editor/Picking.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/VoxelBridge.dir/build.make CMakeFiles/VoxelBridge.dir/src/Editor/Picking.cpp.s
+.PHONY : src/Editor/Picking.cpp.s
+
 src/Gfx/Mesh.o: src/Gfx/Mesh.cpp.o
 .PHONY : src/Gfx/Mesh.o
 
@@ -320,6 +344,9 @@ help:
 	@echo "... src/Core/Window.o"
 	@echo "... src/Core/Window.i"
 	@echo "... src/Core/Window.s"
+	@echo "... src/Editor/Picking.o"
+	@echo "... src/Editor/Picking.i"
+	@echo "... src/Editor/Picking.s"
 	@echo "... src/Gfx/Mesh.o"
 	@echo "... src/Gfx/Mesh.i"
 	@echo "... src/Gfx/Mesh.s"
