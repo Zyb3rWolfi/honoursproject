@@ -37,6 +37,8 @@ private:
     Renderer     m_Renderer;
     Camera       m_Camera;
     Mesh         m_Cube = Mesh::CreateCube(glm::vec3(0.9f, 0.4f, 0.2f));
+    Mesh m_grid = Mesh::CreateGrid(64,16);
+    bool m_ShowGrid = true;
 
     // Test-scene / input state (will move into Input and Editor classes later)
     float  m_Angle       = 0.0f;

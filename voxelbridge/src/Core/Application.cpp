@@ -79,6 +79,10 @@ void Application::OnRender() {
     // Rendering the Cube
     const glm::mat4 model = glm::rotate(glm::mat4(1.0f), m_Angle, glm::vec3(0.0f, 1.0f, 0.0f));
     m_Renderer.Submit(m_Cube, model);
+
+    if (m_ShowGrid) {
+        m_Renderer.SubmitLines(m_grid);
+    }
 }
 
 void Application::OnImGui() {
@@ -91,6 +95,7 @@ void Application::OnImGui() {
         ImGui::Text("Camera: %.1f, %.1f, %.1f",
                     m_Camera.Position.x, m_Camera.Position.y, m_Camera.Position.z);
         ImGui::Text("WASD move, Space/Shift up/down, hold RMB to look");
+        ImGui::Checkbox("Show grid", &m_ShowGrid);
         ImGui::End();
     }
 }
