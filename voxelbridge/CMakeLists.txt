@@ -29,6 +29,13 @@ add_executable(VoxelBridge src/main.cpp
         src/Gfx/Camera.h
         src/Editor/Picking.cpp
         src/Editor/Picking.h
+        src/Voxel/VoxelConfig.h
+        src/Voxel/ChunkCoord.h
+        src/Voxel/Chunk.cpp
+        src/Voxel/Chunk.h
+        src/Voxel/World.cpp
+        src/Voxel/World.h
+        src/Voxel/Coordinates.h
 )
 
 target_link_libraries(VoxelBridge PRIVATE
