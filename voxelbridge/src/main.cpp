@@ -3,8 +3,12 @@
 #include <cstdio>
 #include <exception>
 
+#include "Voxel/Voxeltests.h"
+
 int main() {
     try {
+        RunVoxelTests();
+
         Application app;
         app.Run();
     } catch (const std::exception& e) {

@@ -1,62 +1,68 @@
 [
 {
-  "directory": "C:/Users/anton/CLionProjects/voxelbridge/cmake-build-debug",
-  "command": "C:\\PROGRA~1\\MIB055~1\\18\\PROFES~1\\VC\\Tools\\MSVC\\1451~1.362\\bin\\Hostx64\\x64\\cl.exe  /nologo /TP -DGLFW_DLL -D_MBCS -external:IC:\\Users\\anton\\CLionProjects\\voxelbridge\\vcpkg\\installed\\x64-windows\\include -external:W0 /DWIN32 /D_WINDOWS /EHsc /Ob0 /Od -std:c++20 -MDd -RTC1 -Zi @CMakeFiles\\VoxelBridge.dir\\src\\main.cpp.obj.modmap /FoCMakeFiles\\VoxelBridge.dir\\src\\main.cpp.obj /FdCMakeFiles\\VoxelBridge.dir\\ /FS -c C:\\Users\\anton\\CLionProjects\\voxelbridge\\src\\main.cpp",
-  "file": "C:/Users/anton/CLionProjects/voxelbridge/src/main.cpp",
-  "output": "C:/Users/anton/CLionProjects/voxelbridge/cmake-build-debug/CMakeFiles/VoxelBridge.dir/src/main.cpp.obj"
+  "directory": "/home/antonscereskevics/RiderProjects/honoursproject/voxelbridge/cmake-build-debug",
+  "command": "/usr/bin/c++  -isystem /home/antonscereskevics/RiderProjects/honoursproject/voxelbridge/vcpkg/installed/x64-linux/include -g -std=gnu++20 -fdiagnostics-color=always -o CMakeFiles/VoxelBridge.dir/src/main.cpp.o -c /home/antonscereskevics/RiderProjects/honoursproject/voxelbridge/src/main.cpp",
+  "file": "/home/antonscereskevics/RiderProjects/honoursproject/voxelbridge/src/main.cpp",
+  "output": "CMakeFiles/VoxelBridge.dir/src/main.cpp.o"
 },
 {
-  "directory": "C:/Users/anton/CLionProjects/voxelbridge/cmake-build-debug",
-  "command": "C:\\PROGRA~1\\MIB055~1\\18\\PROFES~1\\VC\\Tools\\MSVC\\1451~1.362\\bin\\Hostx64\\x64\\cl.exe  /nologo /TP -DGLFW_DLL -D_MBCS -external:IC:\\Users\\anton\\CLionProjects\\voxelbridge\\vcpkg\\installed\\x64-windows\\include -external:W0 /DWIN32 /D_WINDOWS /EHsc /Ob0 /Od -std:c++20 -MDd -RTC1 -Zi @CMakeFiles\\VoxelBridge.dir\\src\\ImGUI\\ImGuiWrapper.cpp.obj.modmap /FoCMakeFiles\\VoxelBridge.dir\\src\\ImGUI\\ImGuiWrapper.cpp.obj /FdCMakeFiles\\VoxelBridge.dir\\ /FS -c C:\\Users\\anton\\CLionProjects\\voxelbridge\\src\\ImGUI\\ImGuiWrapper.cpp",
-  "file": "C:/Users/anton/CLionProjects/voxelbridge/src/ImGUI/ImGuiWrapper.cpp",
-  "output": "C:/Users/anton/CLionProjects/voxelbridge/cmake-build-debug/CMakeFiles/VoxelBridge.dir/src/ImGUI/ImGuiWrapper.cpp.obj"
+  "directory": "/home/antonscereskevics/RiderProjects/honoursproject/voxelbridge/cmake-build-debug",
+  "command": "/usr/bin/c++  -isystem /home/antonscereskevics/RiderProjects/honoursproject/voxelbridge/vcpkg/installed/x64-linux/include -g -std=gnu++20 -fdiagnostics-color=always -o CMakeFiles/VoxelBridge.dir/src/ImGUI/ImGuiWrapper.cpp.o -c /home/antonscereskevics/RiderProjects/honoursproject/voxelbridge/src/ImGUI/ImGuiWrapper.cpp",
+  "file": "/home/antonscereskevics/RiderProjects/honoursproject/voxelbridge/src/ImGUI/ImGuiWrapper.cpp",
+  "output": "CMakeFiles/VoxelBridge.dir/src/ImGUI/ImGuiWrapper.cpp.o"
 },
 {
-  "directory": "C:/Users/anton/CLionProjects/voxelbridge/cmake-build-debug",
-  "command": "C:\\PROGRA~1\\MIB055~1\\18\\PROFES~1\\VC\\Tools\\MSVC\\1451~1.362\\bin\\Hostx64\\x64\\cl.exe  /nologo /TP -DGLFW_DLL -D_MBCS -external:IC:\\Users\\anton\\CLionProjects\\voxelbridge\\vcpkg\\installed\\x64-windows\\include -external:W0 /DWIN32 /D_WINDOWS /EHsc /Ob0 /Od -std:c++20 -MDd -RTC1 -Zi @CMakeFiles\\VoxelBridge.dir\\src\\Core\\Application.cpp.obj.modmap /FoCMakeFiles\\VoxelBridge.dir\\src\\Core\\Application.cpp.obj /FdCMakeFiles\\VoxelBridge.dir\\ /FS -c C:\\Users\\anton\\CLionProjects\\voxelbridge\\src\\Core\\Application.cpp",
-  "file": "C:/Users/anton/CLionProjects/voxelbridge/src/Core/Application.cpp",
-  "output": "C:/Users/anton/CLionProjects/voxelbridge/cmake-build-debug/CMakeFiles/VoxelBridge.dir/src/Core/Application.cpp.obj"
+  "directory": "/home/antonscereskevics/RiderProjects/honoursproject/voxelbridge/cmake-build-debug",
+  "command": "/usr/bin/c++  -isystem /home/antonscereskevics/RiderProjects/honoursproject/voxelbridge/vcpkg/installed/x64-linux/include -g -std=gnu++20 -fdiagnostics-color=always -o CMakeFiles/VoxelBridge.dir/src/Core/Application.cpp.o -c /home/antonscereskevics/RiderProjects/honoursproject/voxelbridge/src/Core/Application.cpp",
+  "file": "/home/antonscereskevics/RiderProjects/honoursproject/voxelbridge/src/Core/Application.cpp",
+  "output": "CMakeFiles/VoxelBridge.dir/src/Core/Application.cpp.o"
 },
 {
-  "directory": "C:/Users/anton/CLionProjects/voxelbridge/cmake-build-debug",
-  "command": "C:\\PROGRA~1\\MIB055~1\\18\\PROFES~1\\VC\\Tools\\MSVC\\1451~1.362\\bin\\Hostx64\\x64\\cl.exe  /nologo /TP -DGLFW_DLL -D_MBCS -external:IC:\\Users\\anton\\CLionProjects\\voxelbridge\\vcpkg\\installed\\x64-windows\\include -external:W0 /DWIN32 /D_WINDOWS /EHsc /Ob0 /Od -std:c++20 -MDd -RTC1 -Zi @CMakeFiles\\VoxelBridge.dir\\src\\Core\\Window.cpp.obj.modmap /FoCMakeFiles\\VoxelBridge.dir\\src\\Core\\Window.cpp.obj /FdCMakeFiles\\VoxelBridge.dir\\ /FS -c C:\\Users\\anton\\CLionProjects\\voxelbridge\\src\\Core\\Window.cpp",
-  "file": "C:/Users/anton/CLionProjects/voxelbridge/src/Core/Window.cpp",
-  "output": "C:/Users/anton/CLionProjects/voxelbridge/cmake-build-debug/CMakeFiles/VoxelBridge.dir/src/Core/Window.cpp.obj"
+  "directory": "/home/antonscereskevics/RiderProjects/honoursproject/voxelbridge/cmake-build-debug",
+  "command": "/usr/bin/c++  -isystem /home/antonscereskevics/RiderProjects/honoursproject/voxelbridge/vcpkg/installed/x64-linux/include -g -std=gnu++20 -fdiagnostics-color=always -o CMakeFiles/VoxelBridge.dir/src/Core/Window.cpp.o -c /home/antonscereskevics/RiderProjects/honoursproject/voxelbridge/src/Core/Window.cpp",
+  "file": "/home/antonscereskevics/RiderProjects/honoursproject/voxelbridge/src/Core/Window.cpp",
+  "output": "CMakeFiles/VoxelBridge.dir/src/Core/Window.cpp.o"
 },
 {
-  "directory": "C:/Users/anton/CLionProjects/voxelbridge/cmake-build-debug",
-  "command": "C:\\PROGRA~1\\MIB055~1\\18\\PROFES~1\\VC\\Tools\\MSVC\\1451~1.362\\bin\\Hostx64\\x64\\cl.exe  /nologo /TP -DGLFW_DLL -D_MBCS -external:IC:\\Users\\anton\\CLionProjects\\voxelbridge\\vcpkg\\installed\\x64-windows\\include -external:W0 /DWIN32 /D_WINDOWS /EHsc /Ob0 /Od -std:c++20 -MDd -RTC1 -Zi @CMakeFiles\\VoxelBridge.dir\\src\\Gfx\\Shader.cpp.obj.modmap /FoCMakeFiles\\VoxelBridge.dir\\src\\Gfx\\Shader.cpp.obj /FdCMakeFiles\\VoxelBridge.dir\\ /FS -c C:\\Users\\anton\\CLionProjects\\voxelbridge\\src\\Gfx\\Shader.cpp",
-  "file": "C:/Users/anton/CLionProjects/voxelbridge/src/Gfx/Shader.cpp",
-  "output": "C:/Users/anton/CLionProjects/voxelbridge/cmake-build-debug/CMakeFiles/VoxelBridge.dir/src/Gfx/Shader.cpp.obj"
+  "directory": "/home/antonscereskevics/RiderProjects/honoursproject/voxelbridge/cmake-build-debug",
+  "command": "/usr/bin/c++  -isystem /home/antonscereskevics/RiderProjects/honoursproject/voxelbridge/vcpkg/installed/x64-linux/include -g -std=gnu++20 -fdiagnostics-color=always -o CMakeFiles/VoxelBridge.dir/src/Gfx/Shader.cpp.o -c /home/antonscereskevics/RiderProjects/honoursproject/voxelbridge/src/Gfx/Shader.cpp",
+  "file": "/home/antonscereskevics/RiderProjects/honoursproject/voxelbridge/src/Gfx/Shader.cpp",
+  "output": "CMakeFiles/VoxelBridge.dir/src/Gfx/Shader.cpp.o"
 },
 {
-  "directory": "C:/Users/anton/CLionProjects/voxelbridge/cmake-build-debug",
-  "command": "C:\\PROGRA~1\\MIB055~1\\18\\PROFES~1\\VC\\Tools\\MSVC\\1451~1.362\\bin\\Hostx64\\x64\\cl.exe  /nologo /TP -DGLFW_DLL -D_MBCS -external:IC:\\Users\\anton\\CLionProjects\\voxelbridge\\vcpkg\\installed\\x64-windows\\include -external:W0 /DWIN32 /D_WINDOWS /EHsc /Ob0 /Od -std:c++20 -MDd -RTC1 -Zi @CMakeFiles\\VoxelBridge.dir\\src\\Gfx\\Renderer.cpp.obj.modmap /FoCMakeFiles\\VoxelBridge.dir\\src\\Gfx\\Renderer.cpp.obj /FdCMakeFiles\\VoxelBridge.dir\\ /FS -c C:\\Users\\anton\\CLionProjects\\voxelbridge\\src\\Gfx\\Renderer.cpp",
-  "file": "C:/Users/anton/CLionProjects/voxelbridge/src/Gfx/Renderer.cpp",
-  "output": "C:/Users/anton/CLionProjects/voxelbridge/cmake-build-debug/CMakeFiles/VoxelBridge.dir/src/Gfx/Renderer.cpp.obj"
+  "directory": "/home/antonscereskevics/RiderProjects/honoursproject/voxelbridge/cmake-build-debug",
+  "command": "/usr/bin/c++  -isystem /home/antonscereskevics/RiderProjects/honoursproject/voxelbridge/vcpkg/installed/x64-linux/include -g -std=gnu++20 -fdiagnostics-color=always -o CMakeFiles/VoxelBridge.dir/src/Gfx/Renderer.cpp.o -c /home/antonscereskevics/RiderProjects/honoursproject/voxelbridge/src/Gfx/Renderer.cpp",
+  "file": "/home/antonscereskevics/RiderProjects/honoursproject/voxelbridge/src/Gfx/Renderer.cpp",
+  "output": "CMakeFiles/VoxelBridge.dir/src/Gfx/Renderer.cpp.o"
 },
 {
-  "directory": "C:/Users/anton/CLionProjects/voxelbridge/cmake-build-debug",
-  "command": "C:\\PROGRA~1\\MIB055~1\\18\\PROFES~1\\VC\\Tools\\MSVC\\1451~1.362\\bin\\Hostx64\\x64\\cl.exe  /nologo /TP -DGLFW_DLL -D_MBCS -external:IC:\\Users\\anton\\CLionProjects\\voxelbridge\\vcpkg\\installed\\x64-windows\\include -external:W0 /DWIN32 /D_WINDOWS /EHsc /Ob0 /Od -std:c++20 -MDd -RTC1 -Zi @CMakeFiles\\VoxelBridge.dir\\src\\Gfx\\Mesh.cpp.obj.modmap /FoCMakeFiles\\VoxelBridge.dir\\src\\Gfx\\Mesh.cpp.obj /FdCMakeFiles\\VoxelBridge.dir\\ /FS -c C:\\Users\\anton\\CLionProjects\\voxelbridge\\src\\Gfx\\Mesh.cpp",
-  "file": "C:/Users/anton/CLionProjects/voxelbridge/src/Gfx/Mesh.cpp",
-  "output": "C:/Users/anton/CLionProjects/voxelbridge/cmake-build-debug/CMakeFiles/VoxelBridge.dir/src/Gfx/Mesh.cpp.obj"
+  "directory": "/home/antonscereskevics/RiderProjects/honoursproject/voxelbridge/cmake-build-debug",
+  "command": "/usr/bin/c++  -isystem /home/antonscereskevics/RiderProjects/honoursproject/voxelbridge/vcpkg/installed/x64-linux/include -g -std=gnu++20 -fdiagnostics-color=always -o CMakeFiles/VoxelBridge.dir/src/Gfx/Mesh.cpp.o -c /home/antonscereskevics/RiderProjects/honoursproject/voxelbridge/src/Gfx/Mesh.cpp",
+  "file": "/home/antonscereskevics/RiderProjects/honoursproject/voxelbridge/src/Gfx/Mesh.cpp",
+  "output": "CMakeFiles/VoxelBridge.dir/src/Gfx/Mesh.cpp.o"
 },
 {
-  "directory": "C:/Users/anton/CLionProjects/voxelbridge/cmake-build-debug",
-  "command": "C:\\PROGRA~1\\MIB055~1\\18\\PROFES~1\\VC\\Tools\\MSVC\\1451~1.362\\bin\\Hostx64\\x64\\cl.exe  /nologo /TP -DGLFW_DLL -D_MBCS -external:IC:\\Users\\anton\\CLionProjects\\voxelbridge\\vcpkg\\installed\\x64-windows\\include -external:W0 /DWIN32 /D_WINDOWS /EHsc /Ob0 /Od -std:c++20 -MDd -RTC1 -Zi @CMakeFiles\\VoxelBridge.dir\\src\\Editor\\Picking.cpp.obj.modmap /FoCMakeFiles\\VoxelBridge.dir\\src\\Editor\\Picking.cpp.obj /FdCMakeFiles\\VoxelBridge.dir\\ /FS -c C:\\Users\\anton\\CLionProjects\\voxelbridge\\src\\Editor\\Picking.cpp",
-  "file": "C:/Users/anton/CLionProjects/voxelbridge/src/Editor/Picking.cpp",
-  "output": "C:/Users/anton/CLionProjects/voxelbridge/cmake-build-debug/CMakeFiles/VoxelBridge.dir/src/Editor/Picking.cpp.obj"
+  "directory": "/home/antonscereskevics/RiderProjects/honoursproject/voxelbridge/cmake-build-debug",
+  "command": "/usr/bin/c++  -isystem /home/antonscereskevics/RiderProjects/honoursproject/voxelbridge/vcpkg/installed/x64-linux/include -g -std=gnu++20 -fdiagnostics-color=always -o CMakeFiles/VoxelBridge.dir/src/Editor/Picking.cpp.o -c /home/antonscereskevics/RiderProjects/honoursproject/voxelbridge/src/Editor/Picking.cpp",
+  "file": "/home/antonscereskevics/RiderProjects/honoursproject/voxelbridge/src/Editor/Picking.cpp",
+  "output": "CMakeFiles/VoxelBridge.dir/src/Editor/Picking.cpp.o"
 },
 {
-  "directory": "C:/Users/anton/CLionProjects/voxelbridge/cmake-build-debug",
-  "command": "C:\\PROGRA~1\\MIB055~1\\18\\PROFES~1\\VC\\Tools\\MSVC\\1451~1.362\\bin\\Hostx64\\x64\\cl.exe  /nologo /TP -DGLFW_DLL -D_MBCS -external:IC:\\Users\\anton\\CLionProjects\\voxelbridge\\vcpkg\\installed\\x64-windows\\include -external:W0 /DWIN32 /D_WINDOWS /EHsc /Ob0 /Od -std:c++20 -MDd -RTC1 -Zi @CMakeFiles\\VoxelBridge.dir\\src\\Voxel\\Chunk.cpp.obj.modmap /FoCMakeFiles\\VoxelBridge.dir\\src\\Voxel\\Chunk.cpp.obj /FdCMakeFiles\\VoxelBridge.dir\\ /FS -c C:\\Users\\anton\\CLionProjects\\voxelbridge\\src\\Voxel\\Chunk.cpp",
-  "file": "C:/Users/anton/CLionProjects/voxelbridge/src/Voxel/Chunk.cpp",
-  "output": "C:/Users/anton/CLionProjects/voxelbridge/cmake-build-debug/CMakeFiles/VoxelBridge.dir/src/Voxel/Chunk.cpp.obj"
+  "directory": "/home/antonscereskevics/RiderProjects/honoursproject/voxelbridge/cmake-build-debug",
+  "command": "/usr/bin/c++  -isystem /home/antonscereskevics/RiderProjects/honoursproject/voxelbridge/vcpkg/installed/x64-linux/include -g -std=gnu++20 -fdiagnostics-color=always -o CMakeFiles/VoxelBridge.dir/src/Voxel/Chunk.cpp.o -c /home/antonscereskevics/RiderProjects/honoursproject/voxelbridge/src/Voxel/Chunk.cpp",
+  "file": "/home/antonscereskevics/RiderProjects/honoursproject/voxelbridge/src/Voxel/Chunk.cpp",
+  "output": "CMakeFiles/VoxelBridge.dir/src/Voxel/Chunk.cpp.o"
 },
 {
-  "directory": "C:/Users/anton/CLionProjects/voxelbridge/cmake-build-debug",
-  "command": "C:\\PROGRA~1\\MIB055~1\\18\\PROFES~1\\VC\\Tools\\MSVC\\1451~1.362\\bin\\Hostx64\\x64\\cl.exe  /nologo /TP -DGLFW_DLL -D_MBCS -external:IC:\\Users\\anton\\CLionProjects\\voxelbridge\\vcpkg\\installed\\x64-windows\\include -external:W0 /DWIN32 /D_WINDOWS /EHsc /Ob0 /Od -std:c++20 -MDd -RTC1 -Zi @CMakeFiles\\VoxelBridge.dir\\src\\Voxel\\World.cpp.obj.modmap /FoCMakeFiles\\VoxelBridge.dir\\src\\Voxel\\World.cpp.obj /FdCMakeFiles\\VoxelBridge.dir\\ /FS -c C:\\Users\\anton\\CLionProjects\\voxelbridge\\src\\Voxel\\World.cpp",
-  "file": "C:/Users/anton/CLionProjects/voxelbridge/src/Voxel/World.cpp",
-  "output": "C:/Users/anton/CLionProjects/voxelbridge/cmake-build-debug/CMakeFiles/VoxelBridge.dir/src/Voxel/World.cpp.obj"
+  "directory": "/home/antonscereskevics/RiderProjects/honoursproject/voxelbridge/cmake-build-debug",
+  "command": "/usr/bin/c++  -isystem /home/antonscereskevics/RiderProjects/honoursproject/voxelbridge/vcpkg/installed/x64-linux/include -g -std=gnu++20 -fdiagnostics-color=always -o CMakeFiles/VoxelBridge.dir/src/Voxel/World.cpp.o -c /home/antonscereskevics/RiderProjects/honoursproject/voxelbridge/src/Voxel/World.cpp",
+  "file": "/home/antonscereskevics/RiderProjects/honoursproject/voxelbridge/src/Voxel/World.cpp",
+  "output": "CMakeFiles/VoxelBridge.dir/src/Voxel/World.cpp.o"
+},
+{
+  "directory": "/home/antonscereskevics/RiderProjects/honoursproject/voxelbridge/cmake-build-debug",
+  "command": "/usr/bin/c++  -isystem /home/antonscereskevics/RiderProjects/honoursproject/voxelbridge/vcpkg/installed/x64-linux/include -g -std=gnu++20 -fdiagnostics-color=always -o CMakeFiles/VoxelBridge.dir/src/Voxel/Voxeltests.cpp.o -c /home/antonscereskevics/RiderProjects/honoursproject/voxelbridge/src/Voxel/Voxeltests.cpp",
+  "file": "/home/antonscereskevics/RiderProjects/honoursproject/voxelbridge/src/Voxel/Voxeltests.cpp",
+  "output": "CMakeFiles/VoxelBridge.dir/src/Voxel/Voxeltests.cpp.o"
 }
 ]

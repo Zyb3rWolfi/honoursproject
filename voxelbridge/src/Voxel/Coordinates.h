@@ -4,7 +4,7 @@
 
 #ifndef VOXELBRIDGE_COORDINATES_H
 #define VOXELBRIDGE_COORDINATES_H
-#include <glm\glm.hpp>
+#include <glm/glm.hpp>
 
 #include "ChunkCoord.h"
 #include "VoxelConfig.h"
@@ -23,7 +23,7 @@ struct VoxelLocation {
 // Floor divisonm rounds toward negaitive infifty
 inline int FloorDiv(int value, int divisor) {
     int q = value / divisor;
-    if (value % divisor == 0) --q;
+    if (value % divisor < 0) --q;
     return q;
 }
 
@@ -33,7 +33,7 @@ inline int WorldToChunk(int world) {
 }
 
 // Posotion inside the chunk
-struct in WorldToLocal(int world) {
+inline int WorldToLocal(int world) {
     return world - WorldToChunk(world) * CHUNK_SIZE;
 }
 
