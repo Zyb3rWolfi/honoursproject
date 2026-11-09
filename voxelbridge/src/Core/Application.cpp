@@ -82,24 +82,21 @@ void Application::OnUpdate(float dt) {
     glm::mat4 projection = m_Camera.Projection(m_Window.AspectRatio());
 
     m_ray = m_Picking.ScreenToRay(ndc, view, projection);
-    m_RayHit = m_Picking.IntersectRayPlaneY(m_ray, 0, hitPoint);
+    m_Pick = m_Picking.Pick(m_World, m_ray, 100.0f);
 
-    // This is responsible for detecting which cell we ar ehovering over.
-    if (m_RayHit) {
-        m_HoverCell.x= static_cast<int>(std::floor(hitPoint.x));
-        m_HoverCell.y = static_cast<int>(std::floor(hitPoint.z));
-    }
+    const bool leftDown = m_Window.IsMouseButtonDown(GLFW_MOUSE_BUTTON_LEFT);
+    const bool leftPressed = leftDown && !m_WasLeftDown;
 
-    // This is responsible for actually setting the voxel on that selected grid
-    if (m_Window.IsMouseButtonDown(GLFW_MOUSE_BUTTON_LEFT) && !io.WantCaptureMouse && m_RayHit && m_CurrentTool == Tool::Add) {
-        const int fx = static_cast<int>(std::floor(hitPoint.x));
-        const int fy = static_cast<int>(std::floor(hitPoint.z));
-        m_World.SetVoxel(fx, 0, fy, 1);
-    }
-    if (m_Window.IsMouseButtonDown(GLFW_MOUSE_BUTTON_LEFT) && !io.WantCaptureMouse && m_RayHit && m_CurrentTool == Tool::Subtract) {
-        const int fx = static_cast<int>(std::floor(hitPoint.x));
-        const int fy = static_cast<int>(std::floor(hitPoint.z));
-        m_World.SetVoxel(fx, 0, fy, 0);
+    m_WasLeftDown = leftDown;
+    const bool canInteract = !io.WantCaptureMouse && !looking;
+
+    if (canInteract && leftPressed && m_Pick.hit) {
+        if (m_CurrentTool == Tool::Add) {
+            const glm::ivec3 c = m_Pick.PlaceCell();
+            m_World.SetVoxel(c.x, c.y, c.z,1);
+        } else if (m_Pick.solid) {
+            m_World.SetVoxel(m_Pick.voxel.x, m_Pick.voxel.y, m_Pick.voxel.z, AIR);
+        }
     }
 }
 
@@ -134,9 +131,13 @@ void Application::OnRender() {
         m_Renderer.SubmitLines(m_grid);
     }
 
-    if (m_RayHit && m_ShowHit) {
-        glm::mat4 model = glm::translate(glm::mat4(1.0f), glm::vec3(m_HoverCell.x, 0.01f, m_HoverCell.y));
-        m_Renderer.SubmitLines(m_highlighted, model);
+    if (m_ShowHit && m_Pick.hit && !m_WasLooking) {
+        const bool add = (m_CurrentTool == Tool::Add);
+        if (add || m_Pick.solid) {
+            const glm::ivec3 cell = add ? m_Pick.PlaceCell() : m_Pick.voxel;
+            const glm::mat4 model = glm::translate(glm::mat4(1.0f), glm::vec3(cell.x, cell.y + 0.01f, cell.z));
+            m_Renderer.SubmitLines(m_highlighted, model);
+        }
     }
 }
 
@@ -151,7 +152,6 @@ void Application::OnImGui() {
         ImGui::Separator();
         ImGui::Text("Window: %d x %d", m_Window.Width(), m_Window.Height());
         ImGui::Text("Ray: %.3f", glm::dot(m_ray.direction, m_Camera.Forward()) );
-        ImGui::Text("Cell Selected: %.i, %.i", m_HoverCell.x, m_HoverCell.y);
 
         ImGui::Text("Camera: %.1f, %.1f, %.1f",
                     m_Camera.Position.x, m_Camera.Position.y, m_Camera.Position.z);

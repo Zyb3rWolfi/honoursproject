@@ -12,6 +12,8 @@ struct PickResult {
     glm::ivec3 voxel = {0, 0, 0};
     glm::ivec3 faceNormal = {0, 0, 0};
     float distance = 0.0f;
+
+    glm::ivec3 PlaceCell() const {return voxel + faceNormal;}
 };
 
 #endif //VOXELBRIDGE_PICKRESULT_H

@@ -4,6 +4,8 @@
 
 #ifndef VOXELBRIDGE_CHUNK_H
 #define VOXELBRIDGE_CHUNK_H
+#include <array>
+
 #include "VoxelConfig.h"
 
 

@@ -57,11 +57,10 @@ private:
     bool   m_WasLooking  = false;
     bool   m_ShowDemoWindow = true;
 
-    glm::vec3 hitPoint;
+    PickResult m_Pick;
+    bool m_WasLeftDown = false;
     bool   m_ShowHit = true;
-    bool m_RayHit = false;
 
-    glm::ivec2 m_HoverCell;
 
     enum class Tool {
         Add,

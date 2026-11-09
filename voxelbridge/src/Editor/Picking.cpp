@@ -55,10 +55,10 @@ PickResult Picking::Pick(const World &world, const Ray &ray, float maxDistance) 
 
     constexpr float INF = std::numeric_limits<float>::infinity();
 
-    float tGround = true;
+    float tGround = INF;
     float limit = maxDistance;
 
-    if (o.y > 0.0f && d.y < 1e-6f) {
+    if (o.y > 0.0f && d.y < -1e-6f) {
         tGround = -o.y / d.y;
         if (tGround < limit) {
             limit = tGround;
@@ -126,7 +126,6 @@ PickResult Picking::Pick(const World &world, const Ray &ray, float maxDistance) 
         result.voxel    = glm::ivec3(static_cast<int>(std::floor(px)), -1,
                                      static_cast<int>(std::floor(pz)));
         result.faceNormal   = glm::ivec3(0, 1, 0);
-        result.distance = tGround;
         result.distance = tGround;
     }
     return result;
