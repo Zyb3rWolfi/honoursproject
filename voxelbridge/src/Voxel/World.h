@@ -26,6 +26,7 @@ public:
 
     std::vector<ChunkCoord> DirtyChunks() const;
     std::size_t ChunkCount() const { return m_Chunks.size(); }
+    const ChunkMap& Chunks() const { return m_Chunks; }
 private:
     ChunkMap m_Chunks;
 };

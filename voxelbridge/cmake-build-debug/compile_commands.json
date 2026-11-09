@@ -64,5 +64,11 @@
   "command": "/usr/bin/c++  -isystem /home/antonscereskevics/RiderProjects/honoursproject/voxelbridge/vcpkg/installed/x64-linux/include -g -std=gnu++20 -fdiagnostics-color=always -o CMakeFiles/VoxelBridge.dir/src/Voxel/Voxeltests.cpp.o -c /home/antonscereskevics/RiderProjects/honoursproject/voxelbridge/src/Voxel/Voxeltests.cpp",
   "file": "/home/antonscereskevics/RiderProjects/honoursproject/voxelbridge/src/Voxel/Voxeltests.cpp",
   "output": "CMakeFiles/VoxelBridge.dir/src/Voxel/Voxeltests.cpp.o"
+},
+{
+  "directory": "/home/antonscereskevics/RiderProjects/honoursproject/voxelbridge/cmake-build-debug",
+  "command": "/usr/bin/c++  -isystem /home/antonscereskevics/RiderProjects/honoursproject/voxelbridge/vcpkg/installed/x64-linux/include -g -std=gnu++20 -fdiagnostics-color=always -o CMakeFiles/VoxelBridge.dir/src/Voxel/Mesher.cpp.o -c /home/antonscereskevics/RiderProjects/honoursproject/voxelbridge/src/Voxel/Mesher.cpp",
+  "file": "/home/antonscereskevics/RiderProjects/honoursproject/voxelbridge/src/Voxel/Mesher.cpp",
+  "output": "CMakeFiles/VoxelBridge.dir/src/Voxel/Mesher.cpp.o"
 }
 ]

@@ -15,6 +15,9 @@
 Application::Application() : m_Window(WindowConfig{}) {
     if (!m_Gui.Init(m_Window.Handle(), "#version 330"))
         throw std::runtime_error("Failed to initialize ImGui");
+
+    // Seed one 1x1x1 voxel so the voxel pipeline is visible before editing is added.
+    m_World.SetVoxel(0, 0, 0, 1);
 }
 
 void Application::Run() {
@@ -37,6 +40,8 @@ void Application::Run() {
         m_Gui.EndFrame();
 
         m_Window.SwapBuffers();
+
+
     }
 }
 
@@ -79,11 +84,22 @@ void Application::OnUpdate(float dt) {
     m_ray = m_Picking.ScreenToRay(ndc, view, projection);
     m_RayHit = m_Picking.IntersectRayPlaneY(m_ray, 0, hitPoint);
 
+    // This is responsible for detecting which cell we ar ehovering over.
     if (m_RayHit) {
-        int fx, fy;
-        fx = floor(hitPoint.x);
         m_HoverCell.x= static_cast<int>(std::floor(hitPoint.x));
         m_HoverCell.y = static_cast<int>(std::floor(hitPoint.z));
+    }
+
+    // This is responsible for actually setting the voxel on that selected grid
+    if (m_Window.IsMouseButtonDown(GLFW_MOUSE_BUTTON_LEFT) && !io.WantCaptureMouse && m_RayHit && m_CurrentTool == Tool::Add) {
+        const int fx = static_cast<int>(std::floor(hitPoint.x));
+        const int fy = static_cast<int>(std::floor(hitPoint.z));
+        m_World.SetVoxel(fx, 0, fy, 1);
+    }
+    if (m_Window.IsMouseButtonDown(GLFW_MOUSE_BUTTON_LEFT) && !io.WantCaptureMouse && m_RayHit && m_CurrentTool == Tool::Subtract) {
+        const int fx = static_cast<int>(std::floor(hitPoint.x));
+        const int fy = static_cast<int>(std::floor(hitPoint.z));
+        m_World.SetVoxel(fx, 0, fy, 0);
     }
 }
 
@@ -93,9 +109,26 @@ void Application::OnRender() {
     m_Renderer.Clear(glm::vec3(0.15f, 0.15f, 0.2f));
     m_Renderer.BeginScene(m_Camera, m_Window.AspectRatio());
 
-    // Rendering the Cube
-    const glm::mat4 model = glm::rotate(glm::mat4(1.0f), m_Angle, glm::vec3(0.0f, 1.0f, 0.0f));
-    m_Renderer.Submit(m_Cube, model);
+    // Rebuild only chunks whose voxel data changed, then draw every resident mesh.
+    for (const ChunkCoord& coord : m_World.DirtyChunks()) {
+        MeshData data = m_Mesher.BuildChunkMesh(m_World, coord);
+        auto [it, inserted] = m_ChunkMeshes.try_emplace(coord);
+        it->second.SetData(data.vertices, data.indices);
+        it->second.SetPrimitive(Mesh::Primitive::Triangle);
+        if (Chunk* chunk = m_World.GetChunk(coord)) {
+            chunk->ClearDirty();
+        }
+    }
+
+    for (const auto& [coord, mesh] : m_ChunkMeshes) {
+        const WorldPos origin = ChunkOrigin(coord);
+        const glm::mat4 model = glm::translate(
+            glm::mat4(1.0f),
+            glm::vec3(static_cast<float>(origin.x),
+                      static_cast<float>(origin.y),
+                      static_cast<float>(origin.z)));
+        m_Renderer.Submit(mesh, model);
+    }
 
     if (m_ShowGrid) {
         m_Renderer.SubmitLines(m_grid);
@@ -108,9 +141,12 @@ void Application::OnRender() {
 }
 
 void Application::OnImGui() {
+    std::size_t totalVoxels = 0;
+    for (const auto& [coord, chunk] : m_World.Chunks()) {
+        totalVoxels += static_cast<std::size_t>(chunk.FilledCount());
+    }
     if (m_ShowDemoWindow) {
-        ImGui::Begin("VoxelBridge Demo", &m_ShowDemoWindow);
-        ImGui::Text("Hello from ImGui!");
+        ImGui::Begin("Debug Menu", &m_ShowDemoWindow);
         ImGui::Text("Application average %.1f FPS", ImGui::GetIO().Framerate);
         ImGui::Separator();
         ImGui::Text("Window: %d x %d", m_Window.Width(), m_Window.Height());
@@ -123,6 +159,29 @@ void Application::OnImGui() {
         ImGui::Checkbox("Show grid", &m_ShowGrid);
         ImGui::Checkbox("Show Selected Grid", &m_ShowHit);
 
+        ImGui::Text("Created voxels: %zu", totalVoxels);
+        ImGui::Text("Chunks: %zu", m_World.ChunkCount());
+        ImGui::Separator();
+        if (m_World.Chunks().empty()) {
+            ImGui::TextDisabled("No voxels created");
+        } else {
+            for (const auto& [coord, chunk] : m_World.Chunks()) {
+                ImGui::BulletText("Chunk (%d, %d, %d): %d voxels",
+                                  coord.x, coord.y, coord.z, chunk.FilledCount());
+            }
+        }
         ImGui::End();
     }
+
+    ImGui::Begin("Tools");
+    ImGui::SetWindowSize(ImVec2(200, 100), ImGuiCond_FirstUseEver);
+    ImGui:ImGui::Text("Current Tool: %s", m_CurrentTool == Tool::Add ? "Add" : "Subtract");
+    if (ImGui::Button("Add")) {
+        m_CurrentTool = Tool::Add;
+
+    }
+    if (ImGui::Button("Subtract")) {
+        m_CurrentTool = Tool::Subtract;
+    }
+    ImGui::End();
 }

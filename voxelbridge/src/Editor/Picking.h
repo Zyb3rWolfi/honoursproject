@@ -9,6 +9,9 @@
 #include "glm/vec3.hpp"
 #include <cmath>
 
+#include "PickResult.h"
+#include "../Voxel/World.h"
+
 struct Ray {
     glm::vec3 origin;
     glm::vec3 direction;
@@ -21,6 +24,8 @@ public:
 
     bool IntersectRayPlaneY(const Ray& ray, float planeY, glm::vec3& outHitPoint);
     Ray ScreenToRay(glm::vec2 ndc, const glm::mat4& view, const glm::mat4& projection);
+
+    PickResult Pick(const World& world, const Ray& ray, float maxDistance = 100.0f);
 };
 
 

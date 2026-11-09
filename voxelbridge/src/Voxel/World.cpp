@@ -26,7 +26,35 @@ bool World::SetVoxel(int wx, int wy, int wz, VoxelId id) {
         it = m_Chunks.emplace(loc.chunk, Chunk()).first;
     }
 
-    return it->second.Set(loc.lx, loc.ly, loc.lz, id);
+    const bool changed = it->second.Set(loc.lx, loc.ly, loc.lz, id);
+    if (!changed) {
+        return false;
+    }
+
+    // A boundary edit changes whether the adjacent chunk needs a face.
+    constexpr int directions[6][3] = {
+        {1, 0, 0}, {-1, 0, 0}, {0, 1, 0},
+        {0, -1, 0}, {0, 0, 1}, {0, 0, -1}
+    };
+    for (const auto& direction : directions) {
+        const int lx = loc.lx + direction[0];
+        const int ly = loc.ly + direction[1];
+        const int lz = loc.lz + direction[2];
+        if (lx < 0 || lx >= CHUNK_SIZE ||
+            ly < 0 || ly >= CHUNK_SIZE ||
+            lz < 0 || lz >= CHUNK_SIZE) {
+            const ChunkCoord neighbour{
+                loc.chunk.x + direction[0],
+                loc.chunk.y + direction[1],
+                loc.chunk.z + direction[2]
+            };
+            if (auto neighbourIt = m_Chunks.find(neighbour); neighbourIt != m_Chunks.end()) {
+                neighbourIt->second.MarkDirty();
+            }
+        }
+    }
+
+    return true;
 }
 
 Chunk* World::GetChunk(const ChunkCoord& coord) {
@@ -47,5 +75,4 @@ std::vector<ChunkCoord> World::DirtyChunks() const {
     }
     return result;
 }
-
 

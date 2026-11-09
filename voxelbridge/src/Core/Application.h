@@ -7,6 +7,10 @@
 
 #include "Window.h"
 #include "../Gfx/Renderer.h"
+#include "../Voxel/Mesher.h"
+#include "../Voxel/World.h"
+
+#include <unordered_map>
 #include "../ImGUI/ImGuiWrapper.h"
 #include "../Core/Window.h"
 #include "../Editor/Picking.h"
@@ -38,10 +42,12 @@ private:
     Renderer     m_Renderer;
     Camera       m_Camera;
     Picking      m_Picking;
-    Mesh         m_Cube = Mesh::CreateCube(glm::vec3(0.9f, 0.4f, 0.2f));
     Ray m_ray;
     Mesh m_grid = Mesh::CreateGrid(64,16);
     Mesh m_highlighted = Mesh::CreateSquareOutline(glm::vec3(255));
+    World m_World;
+    Mesher m_Mesher;
+    std::unordered_map<ChunkCoord, Mesh> m_ChunkMeshes;
     bool m_ShowGrid = true;
 
     // Test-scene / input state (will move into Input and Editor classes later)
@@ -56,6 +62,12 @@ private:
     bool m_RayHit = false;
 
     glm::ivec2 m_HoverCell;
+
+    enum class Tool {
+        Add,
+        Subtract
+    };
+    Tool m_CurrentTool = Tool::Add;
 };
 
 #endif //VOXELBRIDGE_APPLICATION_H

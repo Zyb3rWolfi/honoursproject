@@ -38,6 +38,9 @@ add_executable(VoxelBridge src/main.cpp
         src/Voxel/Coordinates.h
         src/Voxel/Voxeltests.cpp
         src/Voxel/Voxeltests.h
+        src/Voxel/Mesher.cpp
+        src/Voxel/Mesher.h
+        src/Editor/PickResult.h
 )
 
 target_link_libraries(VoxelBridge PRIVATE
