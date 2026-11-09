@@ -1,6 +1,6 @@
 # CMake build output
-cmake-build-debug/
-cmake-build-release/
+voxelbridge/cmake-build-debug/
+voxelbridge/cmake-build-release/
 
 # vcpkg generated files
 vcpkg/installed/
@@ -19,10 +19,10 @@ vcpkg/.vcpkg/+
 .DS_Store
 Thumbs.db
 
-CMakeCache.txt
-CMakeFiles/
-cmake_install.cmake
-CMakeLists.txt.user
-Makefile
+voxelbridge/CMakeCache.txt
+voxelbridge/CMakeFiles/
+voxelbridge/cmake_install.cmake
+voxelbridge/CMakeLists.txt.user
+voxelbridge/Makefile
 *.cmake
 /.cmake/
